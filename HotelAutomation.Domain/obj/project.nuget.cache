@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "QWguVhIjMsBf2eNMaGPEVKB7iqPFDCO7L6NIPH3JDqWl19Wk1J3Z2asDiE3DheEVZmIUlKOqtVonkXznFA42bw==",
+  "success": true,
+  "projectFilePath": "E:\\Assist contest\\API\\HotelAutomation\\HotelAutomation.Domain\\HotelAutomation.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\andre\\.nuget\\packages\\mongodb.bson\\2.12.1\\mongodb.bson.2.12.1.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
