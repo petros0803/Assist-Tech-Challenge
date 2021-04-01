@@ -1,9 +1,0 @@
-E:\Assist contest\API\HotelAutomation\HotelAutomation.Domain\bin\Debug\netcoreapp3.1\HotelAutomation.Domain.deps.json
-E:\Assist contest\API\HotelAutomation\HotelAutomation.Domain\bin\Debug\netcoreapp3.1\HotelAutomation.Domain.dll
-E:\Assist contest\API\HotelAutomation\HotelAutomation.Domain\bin\Debug\netcoreapp3.1\HotelAutomation.Domain.pdb
-E:\Assist contest\API\HotelAutomation\HotelAutomation.Domain\obj\Debug\netcoreapp3.1\HotelAutomation.Domain.csprojAssemblyReference.cache
-E:\Assist contest\API\HotelAutomation\HotelAutomation.Domain\obj\Debug\netcoreapp3.1\HotelAutomation.Domain.AssemblyInfoInputs.cache
-E:\Assist contest\API\HotelAutomation\HotelAutomation.Domain\obj\Debug\netcoreapp3.1\HotelAutomation.Domain.AssemblyInfo.cs
-E:\Assist contest\API\HotelAutomation\HotelAutomation.Domain\obj\Debug\netcoreapp3.1\HotelAutomation.Domain.csproj.CoreCompileInputs.cache
-E:\Assist contest\API\HotelAutomation\HotelAutomation.Domain\obj\Debug\netcoreapp3.1\HotelAutomation.Domain.dll
-E:\Assist contest\API\HotelAutomation\HotelAutomation.Domain\obj\Debug\netcoreapp3.1\HotelAutomation.Domain.pdb
