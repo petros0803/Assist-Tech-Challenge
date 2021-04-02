@@ -1,4 +1,5 @@
-﻿using HotelAutomation.Application.Services;
+﻿using HotelAutomation.Application.Common.Models.RoomModels;
+using HotelAutomation.Application.Services;
 using HotelAutomation.Domain.Entitities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -22,6 +23,21 @@ namespace HotelAutomation.API.Controllers
         {
             roomService.Add(room);
             return Ok();
+        }
+
+        [AllowAnonymous]
+        [HttpDelete("{id}")]
+        public IActionResult DeleteRoom(string id)
+        {
+            roomService.Delete(id);
+            return Ok();
+        }
+        [AllowAnonymous]
+        [HttpPut("{id}")]
+        public IActionResult UpdateRoom(UpdateRoomRequestModel room, string id)
+        {
+
+            return Ok(roomService.Update(room, id));
         }
     }
 }

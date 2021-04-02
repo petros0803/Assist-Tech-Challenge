@@ -87,8 +87,19 @@ namespace HotelAutomation.API
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "HotelAutomation.API v1"));
             }
+            app.UseCors(corsPolicyBuilder =>
+                   corsPolicyBuilder.AllowAnyOrigin()
+                                    .AllowAnyMethod()
+                                    .AllowAnyHeader()
+            );
 
             app.UseMiddleware<ExceptionHandlingMiddleware>();
+
+            app.UseCors(corsPolicyBuilder =>
+                  corsPolicyBuilder.AllowAnyOrigin()
+                                   .AllowAnyMethod()
+                                   .AllowAnyHeader()
+           );
 
             app.UseHttpsRedirection();
 
@@ -102,6 +113,7 @@ namespace HotelAutomation.API
             {
                 endpoints.MapControllers();
             });
+
         }
         public static void AddJwt(IServiceCollection services, IConfiguration configuration)
         {

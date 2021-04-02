@@ -1,12 +1,12 @@
-﻿using HotelAutomation.Domain.Common;
+﻿
+using HotelAutomation.Application.Common.Models.Users;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-
-namespace HotelAutomation.Domain.Entitities
+namespace HotelAutomation.Application.Common.Models.UserModels
 {
-    public class Room : BaseEntity
+    class CreateRoomRespomseModel : BaseIdResponseModel
     {
         public string Number { get; set; }
 
@@ -14,8 +14,8 @@ namespace HotelAutomation.Domain.Entitities
 
         public Facility Facilities { get; set; }
 
-        public bool Reserved { get; set; }
 
+        
     }
     public class Facility
     {

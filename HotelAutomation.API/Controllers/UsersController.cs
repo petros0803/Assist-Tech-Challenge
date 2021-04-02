@@ -41,6 +41,7 @@ namespace HotelAutomation.API.Controllers
         [HttpPost("authenticate")]
         public IActionResult Authenticate( LoginModel model)
         {
+
             return Ok(userService.Authenticate(model));
             
 

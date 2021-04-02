@@ -1,23 +1,22 @@
-﻿using HotelAutomation.Domain.Common;
+﻿using HotelAutomation.Application.Common.Models.Users;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-
-namespace HotelAutomation.Domain.Entitities
+namespace HotelAutomation.Application.Common.Models.RoomModels
 {
-    public class Room : BaseEntity
+    public class UpdateRoomResponseModel
     {
+        public string Id { get; set; }
         public string Number { get; set; }
 
         public string Beds { get; set; }
 
-        public Facility Facilities { get; set; }
+        public FacilityResponseModel Facilities { get; set; }
 
-        public bool Reserved { get; set; }
 
     }
-    public class Facility
+    public class FacilityResponseModel
     {
         public bool Wifi { get; set; }
 
@@ -26,6 +25,7 @@ namespace HotelAutomation.Domain.Entitities
         public bool TV { get; set; }
 
         public bool NSR { get; set; }
-
     }
+
 }
+

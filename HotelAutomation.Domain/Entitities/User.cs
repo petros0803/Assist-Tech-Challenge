@@ -15,10 +15,6 @@ namespace HotelAutomation.Domain.Entitities
         public string PhoneNumber { get; set; }
 
         public  string Role { get; set; }
-
-        
-
-
     }
 
     public static class UserRole 
@@ -28,6 +24,5 @@ namespace HotelAutomation.Domain.Entitities
         public const string User = "User";
 
         public const string Staff = "Staff";
-
     }
 }

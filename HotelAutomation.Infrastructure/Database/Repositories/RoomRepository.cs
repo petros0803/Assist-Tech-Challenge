@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using HotelAutomation.Application.Common.Interfaces.Repositories;
+using HotelAutomation.Application.Common.Models.RoomModels;
 
 namespace HotelAutomation.Infrastructure.Database.Repositories
 {
@@ -27,10 +28,10 @@ namespace HotelAutomation.Infrastructure.Database.Repositories
             return room;
         }
 
-        public Room Delete(Room room)
+        public Room Delete(string id)
         {
-            _room.DeleteOne(u => u.Id == room.Id);
-            return room;
+            _room.DeleteOne(u => u.Id == id);
+            return null;
         }
 
         public Room GetById(string id)
@@ -44,9 +45,9 @@ namespace HotelAutomation.Infrastructure.Database.Repositories
         }
 
 
-        public Room Update(Room room)
+        public Room Update(Room room, string id)
         {
-            _room.ReplaceOne(r => r.Id == room.Id, room);
+            _room.ReplaceOne(r => r.Id == id, room);
             return room;
 
         }
