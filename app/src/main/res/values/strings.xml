@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">myHotel</string>
+    <string name="your_comfor_our_pleasure">Your comfort ,our pleasure.</string>
+    <string name="myhotel">myHotel</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">e-mail</string>
+    <string name="prompt_password">password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome."</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="no_account_click_here">No account? Click here</string>
+    <string name="todo">TODO</string>
+    <string name="sign_in">Sign In</string>
+    <string name="glad_you_are_joining_us">Glad you are joining us.</string>
+    <string name="name">full name</string>
+    <string name="phone_number">phone number</string>
+    <string name="confirm_passoword">confirm passoword</string>
+    <string name="changed_your_mind_n_go_back_to_login">Changed your mind? go back to login</string>
+    <string name="register">Register</string>
+</resources>

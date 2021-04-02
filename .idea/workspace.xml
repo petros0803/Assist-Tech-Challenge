@@ -8,7 +8,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="warn" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
@@ -39,8 +39,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="resourceFile" />
         <option value="Interface" />
+        <option value="valueResourceFile" />
+        <option value="resourceFile" />
         <option value="Class" />
       </list>
     </option>
@@ -51,16 +52,16 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_3a_API_30_x86" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-04-02T19:24:39.719Z" />
     <property name="ResourceManagerPrefKey.ResourceType" value="DRAWABLE" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Desktop/android-yellow-team-769fcacc7b007790c5448b63a14070df8f8370b4" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Projects\mobile.apps\myHotel\app\src\main\res\drawable" />
-    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.myhotel.ui" />
       <recent name="com.example.myhotel" />
     </key>
     <key name="android.template.-1923240758">
@@ -69,6 +70,9 @@
     <key name="android.template.797125134">
       <recent name="com.example.myhotel" />
       <recent name="com.example.myhotel.ui" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\mobile.apps\myHotel\app\src\main\res\drawable" />
     </key>
   </component>
   <component name="RunManager">
@@ -151,34 +155,42 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="690" y="295" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1617128974065">
+    <state x="690" y="295" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1617365216895">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="690" y="295" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617128974065" />
-    <state x="765" y="246" key="#com.intellij.ide.util.MemberChooser" timestamp="1617128799307">
+    <state x="690" y="295" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617365216895" />
+    <state x="414" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1617395513149">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="765" y="246" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617128799307" />
-    <state x="743" y="409" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1617106753114">
+    <state x="414" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617395513149" />
+    <state x="1000" y="200" key="#com.intellij.ide.util.MemberChooser" timestamp="1617400801081">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="743" y="409" width="433" height="268" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617106753114" />
-    <state x="690" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1617106475191">
+    <state x="1000" y="200" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617400801081" />
+    <state x="595" y="464" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1617402564802">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="690" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617106475191" />
-    <state x="92" y="92" width="1736" height="896" key="AVDManager" timestamp="1617188336421">
+    <state x="595" y="464" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617402564802" />
+    <state x="743" y="409" width="512" height="270" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1617402525515">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="92" y="92" width="1736" height="896" key="AVDManager/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617188336421" />
-    <state x="540" y="295" key="AndroidCreateResourceDirectoryDialog" timestamp="1617105220596">
+    <state x="743" y="409" width="512" height="270" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617402525515" />
+    <state x="690" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1617402543746">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="540" y="295" key="AndroidCreateResourceDirectoryDialog/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617105220596" />
-    <state x="540" y="295" key="AndroidCreateResourceFileDialog" timestamp="1617110695626">
+    <state x="690" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617402543746" />
+    <state x="92" y="92" width="1736" height="896" key="AVDManager" timestamp="1617392968331">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="540" y="295" key="AndroidCreateResourceFileDialog/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617110695626" />
+    <state x="92" y="92" width="1736" height="896" key="AVDManager/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617392968331" />
+    <state x="540" y="295" key="AndroidCreateResourceDirectoryDialog" timestamp="1617395244414">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="540" y="295" key="AndroidCreateResourceDirectoryDialog/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617395244414" />
+    <state x="540" y="295" key="AndroidCreateResourceFileDialog" timestamp="1617395268147">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="540" y="295" key="AndroidCreateResourceFileDialog/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617395268147" />
     <state x="804" y="330" key="AndroidCreateXmlResourceDialog" timestamp="1617126769384">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -187,29 +199,29 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="640" y="295" key="Downloadable.Font.Dialog.Size/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617110381284" />
-    <state x="645" y="286" key="FileChooserDialogImpl" timestamp="1617125797378">
+    <state x="645" y="286" key="FileChooserDialogImpl" timestamp="1617399302771">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="645" y="286" key="FileChooserDialogImpl/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617125797378" />
-    <state width="1876" height="608" key="GridCell.Tab.0.bottom" timestamp="1617199347609">
+    <state x="645" y="286" key="FileChooserDialogImpl/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617399302771" />
+    <state width="1876" height="879" key="GridCell.Tab.0.bottom" timestamp="1617401585455">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="608" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617199347609" />
+    <state width="1876" height="879" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617401585455" />
     <state width="1876" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617189561624" />
-    <state width="1876" height="608" key="GridCell.Tab.0.center" timestamp="1617199347608">
+    <state width="1876" height="879" key="GridCell.Tab.0.center" timestamp="1617401585454">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="608" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617199347608" />
+    <state width="1876" height="879" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617401585454" />
     <state width="1876" height="295" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617189561624" />
-    <state width="1876" height="608" key="GridCell.Tab.0.left" timestamp="1617199347607">
+    <state width="1876" height="879" key="GridCell.Tab.0.left" timestamp="1617401585452">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="608" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617199347607" />
+    <state width="1876" height="879" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617401585452" />
     <state width="1876" height="295" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617189561624" />
-    <state width="1876" height="608" key="GridCell.Tab.0.right" timestamp="1617199347608">
+    <state width="1876" height="879" key="GridCell.Tab.0.right" timestamp="1617401585454">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="608" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617199347608" />
+    <state width="1876" height="879" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617401585454" />
     <state width="1876" height="295" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617189561624" />
     <state x="461" y="185" key="SettingsEditor" timestamp="1616998292614">
       <screen x="0" y="0" width="1920" height="1080" />

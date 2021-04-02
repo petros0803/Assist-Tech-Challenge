@@ -1,20 +1,25 @@
 com/example/myhotel/BuildConfig.java
  com.example.myhotel.BuildConfig
-com/example/myhotel/api/UserInterface.java
- com.example.myhotel.api.UserInterface
 com/example/myhotel/data/User.java
  com.example.myhotel.data.User
-com/example/myhotel/api/model/Login.java
- com.example.myhotel.api.model.Login
-com/example/myhotel/RegisterActivity.java
- com.example.myhotel.RegisterActivity
- com.example.myhotel.RegisterActivity$1
-com/example/myhotel/api/api.java
- com.example.myhotel.api.api
+com/example/myhotel/api/models/Login.java
+ com.example.myhotel.api.models.Login
+com/example/myhotel/data/Singleton.java
+ com.example.myhotel.data.Singleton
 com/example/myhotel/SplashScreen.java
  com.example.myhotel.SplashScreen
  com.example.myhotel.SplashScreen$1
+com/example/myhotel/api/ApiClient.java
+ com.example.myhotel.api.ApiClient
+com/example/myhotel/api/ApiInterface.java
+ com.example.myhotel.api.ApiInterface
+com/example/myhotel/api/models/Register.java
+ com.example.myhotel.api.models.Register
+com/example/myhotel/RegisterActivity.java
+ com.example.myhotel.RegisterActivity
+ com.example.myhotel.RegisterActivity$1
 com/example/myhotel/LoginActivity.java
  com.example.myhotel.LoginActivity
  com.example.myhotel.LoginActivity$1
  com.example.myhotel.LoginActivity$2
+ com.example.myhotel.LoginActivity$3
