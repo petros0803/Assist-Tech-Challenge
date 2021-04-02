@@ -1,0 +1,182 @@
+[
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\font_josefin_sans_semibold.xml.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\font\\josefin_sans_semibold.xml"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_unlock.xml.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\drawable\\ic_unlock.xml"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_lock.xml.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\drawable\\ic_lock.xml"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\anim_bounce.xml.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\anim\\bounce.xml"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\anim_sample_anim.xml.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\anim\\sample_anim.xml"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_vector.xml.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\drawable\\ic_vector.xml"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\font_josefinsans_italic.ttf.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\font\\josefinsans_italic.ttf"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\anim_rotate.xml.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\anim\\rotate.xml"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\anim_fadein.xml.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\anim\\fadein.xml"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\font_josefinsans_regular.ttf.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\font\\josefinsans_regular.ttf"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\anim_blink_anim.xml.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\anim\\blink_anim.xml"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_user_check.xml.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\drawable\\ic_user_check.xml"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\anim_fadeout.xml.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\anim\\fadeout.xml"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\anim_righttoleft.xml.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\anim\\righttoleft.xml"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\drawable_img_login.png.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\drawable\\img_login.png"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ill_register__1_.png.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\drawable\\ill_register__1_.png"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_register.xml.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\layout\\activity_register.xml"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\anim_mixed_anim.xml.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\anim\\mixed_anim.xml"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\drawable_input_border.xml.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\drawable\\input_border.xml"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\font_josefin_sans_semibold_italic.xml.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\font\\josefin_sans_semibold_italic.xml"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_login.xml.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\anim_lefttoright.xml.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\anim\\lefttoright.xml"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn.xml.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\drawable\\btn.xml"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_mail.xml.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\drawable\\ic_mail.xml"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\font_josefin_sans.xml.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\font\\josefin_sans.xml"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\anim_zoomin.xml.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\anim\\zoomin.xml"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_user.xml.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\drawable\\ic_user.xml"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_myhotel.xml.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\drawable\\ic_myhotel.xml"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\drawable_img_splash.png.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\drawable\\img_splash.png"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\anim_zoomout.xml.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\anim\\zoomout.xml"
+    }
+]
