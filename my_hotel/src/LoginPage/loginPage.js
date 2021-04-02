@@ -1,46 +1,47 @@
-import React, { useState } from 'react'
-import './loginPage.css'
+import React, { Component } from 'react'
+import { useForm } from 'react-hook-form'
+import './loginpage.css'
 
-class LoginPage extends React.Component {
-    constructor(){
-        super();
-        this.state = {
-          email: '',
-          password: '',
-          errors: []
-        }
+const LoginPage = () => {
+    const { register, handleSubmit, formState: { errors }, watch } = useForm();
+
+    const onSubmit = (data) => {
+        console.log(data)
     }
 
-    handleChangeEmail(email) {
-		this.setState({ email: email });
-    }
+    return (
+        <div>
+            <form onSubmit={handleSubmit(onSubmit)}>
+                <input type="text" palceholder="email" name="email" {...register('email', {
+                    required: {
+                        value: true,
+                        message: "Email is required!"
+                    },
+                    pattern: {
+                        value: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/,
+                        message: "Email is invalid!"
+                    }
+                })} />
 
-    handleChangePassword(password) {
-		this.setState({ password: password });
-    }
+                {errors.email && (<span> {errors.email.message} </span>)}
 
-    
+                <input type="password" name="password" placeholder="password" {...register('password', {
+                    required: {
+                        value: true,
+                        message: "Password is required!"
+                    },
+                    minLength: {
+                        value: 6,
+                        message: "Password must be at least 6 characters long!"
+                    }
+                })} />
 
-    isEmailValid = () => {
-        const re = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+                {errors.password && (<span> {errors.password.message} </span>)}
 
-        return re.test(this.state.email);
-    }
-
-    sendLoginData = () => {
-        
-
-    }
-
-    render() {
-        return(
-            <div>
-                <input type="text" placeholder="email" value = {this.state.email}  onChange = {e => this.handleChangeEmail(e.target.value)} />
-                <input type="text" placeholder="password" value = {this.state.password} onChange = {e => this.handleChangePassword(e.target.value)} />
-                <button value = "Send Login data" onClick = {this.sendLoginData}/>
-            </div>
-        )
-    }
+                <input type="submit" />
+            </form>
+        </div>
+    )
 }
 
-export default LoginPage;
+export default LoginPage
