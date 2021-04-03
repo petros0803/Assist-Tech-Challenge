@@ -9,7 +9,10 @@ const LoginPage = () => {
     const onSubmit = data => {
         fetch(api.authentificate, {
             method: 'POST',
-            body: JSON.stringify({data}),
+            body: JSON.stringify({
+                "email": data.email,
+                "password": data.password
+            }),
             headers: {'Content-Type': 'application/json'}
         })
         .then(resp => resp.json())
