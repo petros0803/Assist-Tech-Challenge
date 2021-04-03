@@ -1,12 +1,26 @@
 import React from 'react'
 import LoginPage from './LoginPage/LoginPage'
+import { requestLogin } from './Redux/Actions'
+import { connect } from 'react-redux'
 
-function App() {
+const mapStateToProps = state => {
+  return {
+    requestLogin: state.requestLogin
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onRequestLogin: (data) => dispatch(requestLogin(data))
+  }
+}
+
+function App(props) {
   return (
     <div className="App">
-      <LoginPage />
+      <LoginPage store={props} />
     </div>
   );
 }
 
-export default App;
+export default connect(mapStateToProps, mapDispatchToProps)(App);

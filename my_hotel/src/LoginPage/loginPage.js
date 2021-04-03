@@ -1,26 +1,19 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { useForm } from 'react-hook-form'
 import './loginpage.css'
-import api from '../Api-connections/Api-connections';
+import { useDispatch } from 'react-redux'
 
-const LoginPage = () => {
-    const { register, handleSubmit, formState: { errors }, watch } = useForm();
+const LoginPage = (props) => {
+    const { register, handleSubmit, formState: { errors } } = useForm();
+    const dispatch = useDispatch();
 
     const onSubmit = data => {
-        fetch(api.authentificate, {
-            method: 'POST',
-            body: JSON.stringify({
-                "email": data.email,
-                "password": data.password
-            }),
-            headers: {'Content-Type': 'application/json'}
-        })
-        .then(resp => resp.json())
-        .then(response => console.log(response))
+        dispatch(props.store.onRequestLogin(data))
     }
 
     return (
         <div>
+            <button onClick = {() => console.log(props.store.loginData)}> CLICK </button>
             <form className="form-container" onSubmit={handleSubmit(onSubmit)}>
                 <h1 className="form__logintitle">Login</h1>
                 <div className="form__inputs">
@@ -50,7 +43,7 @@ const LoginPage = () => {
 
                     {errors.password && (<span> {errors.password.message} </span>)}
                 </div>
-                <input type="submit" className="form__loginbutton" value="Login"/>
+                <input type="submit" className="form__loginbutton" value="Login" />
             </form>
         </div>
     )

@@ -2,9 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import { createStore, applyMiddleware } from 'redux'
+import allReducers from './Redux/IndexRedux';
+import { Provider } from 'react-redux'
+import thunkMiddleware from 'redux-thunk';
+import { createLogger } from 'redux-logger'
+
+const logger = createLogger();
+const store = createStore(allReducers, applyMiddleware(thunkMiddleware, logger));
 
 ReactDOM.render(
+  <Provider store={store}>
     <App />
+  </Provider>
   ,
   document.getElementById('root')
 );
