@@ -2,11 +2,14 @@ package com.example.myhotel.ui;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.util.Patterns;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.myhotel.R;
@@ -55,13 +58,22 @@ public class RegisterActivity extends AppCompatActivity {
         confirmpass = findViewById(R.id.confirm_pass);
         phone = findViewById(R.id.phone_create);
         Button btn_register = findViewById(R.id.btn_register);
+        TextView bck=findViewById(R.id.txt_bk_to_login);
 
+        bck.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+                finish();
+            }
+        });
 
         btn_register.setOnClickListener(v -> {
 
             register();
-            Toast.makeText(RegisterActivity.this, "Well Done", Toast.LENGTH_LONG).show();
-
+            Toast.makeText(RegisterActivity.this, "Proceeding to login", Toast.LENGTH_LONG).show();
+            startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+            finish();
         });
 
 
@@ -166,12 +178,13 @@ public class RegisterActivity extends AppCompatActivity {
                 @Override
                 public void onResponse(@NotNull Call<Register> call, @NotNull Response<Register> response) {
                     if (response.isSuccessful()) {
-
+                        Toast.makeText(RegisterActivity.this, "Succesfully Register", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(RegisterActivity.this, "Proceeding to login", Toast.LENGTH_LONG).show();
+                        startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+                        finish();
                         if (response.body() != null) {
 
 
-
-                            Toast.makeText(RegisterActivity.this, response.body().toString(), Toast.LENGTH_LONG).show();
                          } else {
                             Toast.makeText(RegisterActivity.this, "Nothing has been returned", Toast.LENGTH_LONG).show();
                         }

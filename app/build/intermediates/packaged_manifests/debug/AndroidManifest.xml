@@ -28,17 +28,27 @@
         android:theme="@style/Theme.MyHotel"
         android:usesCleartextTraffic="true" >
         <activity
-            android:name="com.example.myhotel.RegisterActivity"
+            android:name="com.example.myhotel.ui.main"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.MyHotel.NoActionBar" >
+        </activity>
+        <activity
+            android:name="com.example.myhotel.ui.MainMenu"
             android:hardwareAccelerated="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustNothing" />
         <activity
-            android:name="com.example.myhotel.LoginActivity"
+            android:name="com.example.myhotel.ui.RegisterActivity"
             android:hardwareAccelerated="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustNothing" />
         <activity
-            android:name="com.example.myhotel.SplashScreen"
+            android:name="com.example.myhotel.ui.LoginActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name="com.example.myhotel.ui.SplashScreen"
             android:hardwareAccelerated="true"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustNothing" >

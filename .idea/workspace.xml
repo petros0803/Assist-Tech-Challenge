@@ -8,7 +8,8 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="warn" />
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="MENU" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="info" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
@@ -41,8 +42,10 @@
       <list>
         <option value="Interface" />
         <option value="valueResourceFile" />
-        <option value="resourceFile" />
         <option value="Class" />
+        <option value="layoutResourceFile_vertical" />
+        <option value="layoutResourceFile" />
+        <option value="resourceFile" />
       </list>
     </option>
   </component>
@@ -53,26 +56,37 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_3a_API_30_x86" />
-    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-04-02T19:24:39.719Z" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-04-03T17:38:25.462Z" />
     <property name="ResourceManagerPrefKey.ResourceType" value="DRAWABLE" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Desktop/android-yellow-team-769fcacc7b007790c5448b63a14070df8f8370b4" />
+    <property name="android-custom-viewC:/Users/serba/.gradle/caches/modules-2/files-2.1/androidx.drawerlayout/drawerlayout/1.1.1/d95f7d9cd7d95cc0c038bbcf9c65f521b56fee55/drawerlayout-1.1.1-sources.jar!/androidx/drawerlayout/widget/DrawerLayout.java_SELECTED" value="DrawerLayout" />
+    <property name="android-custom-viewC:/Users/serba/AppData/Local/Android/Sdk/sources/android-30/android/view/View.java_SELECTED" value="View" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
+    <property name="multi-representation-previewC:/Users/serba/.gradle/caches/modules-2/files-2.1/androidx.drawerlayout/drawerlayout/1.1.1/d95f7d9cd7d95cc0c038bbcf9c65f521b56fee55/drawerlayout-1.1.1-sources.jar!/androidx/drawerlayout/widget/DrawerLayout.java_selected" value="Custom views" />
+    <property name="multi-representation-previewC:/Users/serba/AppData/Local/Android/Sdk/sources/android-30/android/view/View.java_selected" value="Custom views" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\mobile.apps\myHotel\app\src\main\res\drawable" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.example.myhotel.ui" />
       <recent name="com.example.myhotel" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Projects\mobile.apps\myHotel\app\src\main\res\drawable-v24" />
+    </key>
     <key name="android.template.-1923240758">
       <recent name="com.example.myhotel" />
+    </key>
+    <key name="android.template.207893710">
+      <recent name="com.example.myhotel.ui" />
     </key>
     <key name="android.template.797125134">
       <recent name="com.example.myhotel" />
       <recent name="com.example.myhotel.ui" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Projects\mobile.apps\myHotel\app\src\main\res\drawable" />
     </key>
   </component>
   <component name="RunManager">
@@ -179,54 +193,58 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="690" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617402543746" />
-    <state x="92" y="92" width="1736" height="896" key="AVDManager" timestamp="1617392968331">
+    <state x="92" y="92" width="1736" height="896" key="AVDManager" timestamp="1617472358124">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="92" y="92" width="1736" height="896" key="AVDManager/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617392968331" />
-    <state x="540" y="295" key="AndroidCreateResourceDirectoryDialog" timestamp="1617395244414">
+    <state x="92" y="92" width="1736" height="896" key="AVDManager/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617472358124" />
+    <state x="540" y="295" key="AndroidCreateResourceDirectoryDialog" timestamp="1617466445879">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="540" y="295" key="AndroidCreateResourceDirectoryDialog/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617395244414" />
-    <state x="540" y="295" key="AndroidCreateResourceFileDialog" timestamp="1617395268147">
+    <state x="540" y="295" key="AndroidCreateResourceDirectoryDialog/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617466445879" />
+    <state x="540" y="295" key="AndroidCreateResourceFileDialog" timestamp="1617473690994">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="540" y="295" key="AndroidCreateResourceFileDialog/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617395268147" />
-    <state x="804" y="330" key="AndroidCreateXmlResourceDialog" timestamp="1617126769384">
+    <state x="540" y="295" key="AndroidCreateResourceFileDialog/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617473690994" />
+    <state x="804" y="330" key="AndroidCreateXmlResourceDialog" timestamp="1617474800248">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="804" y="330" key="AndroidCreateXmlResourceDialog/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617126769384" />
+    <state x="804" y="330" key="AndroidCreateXmlResourceDialog/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617474800248" />
     <state x="640" y="295" key="Downloadable.Font.Dialog.Size" timestamp="1617110381284">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="640" y="295" key="Downloadable.Font.Dialog.Size/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617110381284" />
-    <state x="645" y="286" key="FileChooserDialogImpl" timestamp="1617399302771">
+    <state x="645" y="286" key="FileChooserDialogImpl" timestamp="1617470050882">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="645" y="286" key="FileChooserDialogImpl/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617399302771" />
-    <state width="1876" height="879" key="GridCell.Tab.0.bottom" timestamp="1617401585455">
+    <state x="645" y="286" key="FileChooserDialogImpl/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617470050882" />
+    <state width="1876" height="301" key="GridCell.Tab.0.bottom" timestamp="1617471446509">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="879" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617401585455" />
+    <state width="1876" height="301" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617471446509" />
     <state width="1876" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617189561624" />
-    <state width="1876" height="879" key="GridCell.Tab.0.center" timestamp="1617401585454">
+    <state width="1876" height="301" key="GridCell.Tab.0.center" timestamp="1617471446509">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="879" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617401585454" />
+    <state width="1876" height="301" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617471446509" />
     <state width="1876" height="295" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617189561624" />
-    <state width="1876" height="879" key="GridCell.Tab.0.left" timestamp="1617401585452">
+    <state width="1876" height="301" key="GridCell.Tab.0.left" timestamp="1617471446509">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="879" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617401585452" />
+    <state width="1876" height="301" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617471446509" />
     <state width="1876" height="295" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617189561624" />
-    <state width="1876" height="879" key="GridCell.Tab.0.right" timestamp="1617401585454">
+    <state width="1876" height="301" key="GridCell.Tab.0.right" timestamp="1617471446509">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="879" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617401585454" />
+    <state width="1876" height="301" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617471446509" />
     <state width="1876" height="295" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617189561624" />
     <state x="461" y="185" key="SettingsEditor" timestamp="1616998292614">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="461" y="185" key="SettingsEditor/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1616998292614" />
+    <state x="875" y="331" key="chooseDestDirectoryDialog" timestamp="1617474278323">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="875" y="331" key="chooseDestDirectoryDialog/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617474278323" />
     <state x="616" y="250" key="run.anything.popup" timestamp="1617126060020">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

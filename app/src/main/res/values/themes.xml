@@ -6,5 +6,11 @@
         <item name="android:statusBarColor" tools:targetApi="l">@color/Black</item>
         <!-- Customize your theme here. -->
     </style>
+    <style name="Theme.MyHotel.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.MyHotel.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.MyHotel.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>

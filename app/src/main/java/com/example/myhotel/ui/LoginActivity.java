@@ -48,7 +48,13 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
-        new_account.setOnClickListener(v -> startActivity(new Intent(getApplicationContext(), RegisterActivity.class)));
+        new_account.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), RegisterActivity.class));
+                        finish();
+            }
+        });
     }
 
 
@@ -101,7 +107,10 @@ public class LoginActivity extends AppCompatActivity {
                         if (response.body().getToken() != null) {
                             Singleton.getInstance().setName(response.body().getName() + " " + response.body().getSurname());
                             Singleton.getInstance().setPhoneNumber(response.body().getPhoneNumber());
-                            Singleton.getInstance().setToken(response.body().getPhoneNumber());
+                            Singleton.getInstance().setEmail(response.body().getEmail());
+                            Singleton.getInstance().setToken(response.body().getToken());
+                            startActivity(new Intent(getApplicationContext(), MainMenu.class));
+                            finish();
                         }
                     }
 
