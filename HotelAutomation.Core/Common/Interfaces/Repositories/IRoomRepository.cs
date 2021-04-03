@@ -16,5 +16,7 @@ namespace HotelAutomation.Application.Common.Interfaces.Repositories
 
         Room GetById(string id);
 
+        Room GetByStatus(bool status);
+
     }
 }

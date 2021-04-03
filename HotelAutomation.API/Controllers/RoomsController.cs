@@ -26,6 +26,22 @@ namespace HotelAutomation.API.Controllers
         }
 
         [AllowAnonymous]
+        [HttpGet("{id}")]
+        public IActionResult GetRoomById(string id)
+        {
+            
+            return Ok(roomService.GetById(id));
+        }
+
+        [AllowAnonymous]
+        [HttpGet]
+        public IActionResult GetRoomByStatus([FromQuery]  bool status)
+        {
+
+            return Ok(roomService.GetByStatus(status));
+        }
+
+        [AllowAnonymous]
         [HttpDelete("{id}")]
         public IActionResult DeleteRoom(string id)
         {

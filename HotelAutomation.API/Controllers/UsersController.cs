@@ -22,8 +22,8 @@ namespace HotelAutomation.API.Controllers
         [HttpPost]
         public IActionResult Register(User user)
         {
-            userService.Add(user);
-            return Ok();
+            
+            return Ok(userService.Add(user));
         }
         
         
@@ -41,11 +41,7 @@ namespace HotelAutomation.API.Controllers
         [HttpPost("authenticate")]
         public IActionResult Authenticate( LoginModel model)
         {
-
-            return Ok(userService.Authenticate(model));
-            
-
-            
+            return Ok(userService.Authenticate(model));  
         }
     }
 }

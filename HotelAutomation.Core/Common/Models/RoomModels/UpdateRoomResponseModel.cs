@@ -14,6 +14,7 @@ namespace HotelAutomation.Application.Common.Models.RoomModels
 
         public FacilityResponseModel Facilities { get; set; }
 
+        public bool Reserved { get; set; }
 
     }
     public class FacilityResponseModel

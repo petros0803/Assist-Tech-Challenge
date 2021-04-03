@@ -49,7 +49,16 @@ namespace HotelAutomation.Infrastructure.Database.Repositories
         {
             _room.ReplaceOne(r => r.Id == id, room);
             return room;
+        }
 
+        public Room GetByStatus(bool status)
+        {
+            var room = _room.Find<Room>(r => r.Reserved == status).FirstOrDefault();
+            if (room == null)
+            {
+                throw new EntityNotFoundException();
+            }
+            return room;
         }
 
         

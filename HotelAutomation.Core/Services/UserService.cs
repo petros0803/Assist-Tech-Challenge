@@ -26,9 +26,16 @@ namespace HotelAutomation.Application.Services
             this.configuration = configuration;
         }
 
-        public void Add(User user)
+        public UserRegisterResponseModel Add(User user)
         {
             userRepository.Insert(user);
+            return  new UserRegisterResponseModel
+            {
+                Name = user.Name,
+                Surname = user.Surname,
+                Email = user.Email,
+                PhoneNumber = user.PhoneNumber
+            };
 
         }
 

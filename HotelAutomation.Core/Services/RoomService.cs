@@ -29,6 +29,54 @@ namespace HotelAutomation.Application.Services
 
         }
 
+        public RoomResponseModel GetById(string id)
+        {
+            var room = roomRepository.GetById(id);
+
+            return new RoomResponseModel
+            {
+                Number = room.Number,
+                Beds = room.Beds,
+                Facilities = new GetFacility
+                {
+                    Wifi = room.Facilities.Wifi,
+                    AC = room.Facilities.AC,
+                    TV = room.Facilities.TV,
+                    NSR = room.Facilities.NSR
+                }
+
+            };
+
+
+        }
+
+        public RoomResponseModel GetByStatus(bool status)
+        {
+            /*var rooms = new List<Room>(roomRepository.GetByStatus(status));
+
+            var rooms = from r in roomRepository.GetByStatus(status)
+                        select RoomResponseModel()
+                        {
+
+            };
+
+
+            return new RoomResponseModel
+            {
+                Number = room.Number,
+                Beds = room.Beds,
+                Facilities = new GetFacility
+                {
+                    Wifi = room.Facilities.Wifi,
+                    AC = room.Facilities.AC,
+                    TV = room.Facilities.TV,
+                    NSR = room.Facilities.NSR
+                }
+
+            };*/
+            return null;
+        }
+
         public void Delete(string id)
         {
             roomRepository.Delete(id);
