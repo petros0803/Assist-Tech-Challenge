@@ -13,7 +13,6 @@ const LoginPage = (props) => {
 
     return (
         <div>
-            <button onClick = {() => console.log(props.store.loginData)}> CLICK </button>
             <form className="form-container" onSubmit={handleSubmit(onSubmit)}>
                 <h1 className="form__logintitle">Login</h1>
                 <div className="form__inputs">

@@ -2,6 +2,7 @@ import React from 'react'
 import LoginPage from './LoginPage/LoginPage'
 import { requestLogin } from './Redux/Actions'
 import { connect } from 'react-redux'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 const mapStateToProps = state => {
   return {
@@ -17,9 +18,11 @@ const mapDispatchToProps = (dispatch) => {
 
 function App(props) {
   return (
-    <div className="App">
-      <LoginPage store={props} />
-    </div>
+    <Router>
+      <div className="App">
+        <Route path='/login' render={() => { return (<LoginPage store={props} />) }} />
+      </div>
+    </Router>
   );
 }
 

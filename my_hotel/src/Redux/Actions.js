@@ -15,9 +15,17 @@ export const requestLogin = data => dispatch => {
         }),
         headers: { 'Content-Type': 'application/json' }
     })
-        .then(resp => resp.json())
+        .then(handleServerError)
         .then(data => {
             dispatch({ type: REQUEST_LOGIN_SUCCESS, payload: data })
         })
         .catch(error => dispatch({ type: REQUEST_LOGIN_FAILED, payload: error }))
+}
+
+const handleServerError = (response) =>{
+    if (!response.ok) {
+        throw Error("Resposnse failed!");
+    }
+
+    return response.json();
 }
