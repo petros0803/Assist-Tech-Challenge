@@ -6,6 +6,8 @@ using System.Collections.Generic;
 using System.Text;
 using HotelAutomation.Application.Common.Interfaces.Repositories;
 using HotelAutomation.Application.Common.Models.RoomModels;
+using MongoDB.Bson;
+using System.Threading.Tasks;
 
 namespace HotelAutomation.Infrastructure.Database.Repositories
 {
@@ -51,14 +53,13 @@ namespace HotelAutomation.Infrastructure.Database.Repositories
             return room;
         }
 
-        public Room GetByStatus(bool status)
+        public async Task<List<Room>> GetByStatusAsync(bool status)
         {
-            var room = _room.Find<Room>(r => r.Reserved == status).FirstOrDefault();
-            if (room == null)
-            {
-                throw new EntityNotFoundException();
-            }
-            return room;
+
+            var documents = await _room.Find(r => r.Reserved == status).ToListAsync();
+            
+            return documents;
+
         }
 
         

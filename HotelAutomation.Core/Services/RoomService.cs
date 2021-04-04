@@ -8,6 +8,7 @@ using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace HotelAutomation.Application.Services
 {
@@ -50,31 +51,31 @@ namespace HotelAutomation.Application.Services
 
         }
 
-        public RoomResponseModel GetByStatus(bool status)
+        public async Task<List<RoomResponseModel>> GetByStatusAsync(bool status)
         {
-            /*var rooms = new List<Room>(roomRepository.GetByStatus(status));
 
-            var rooms = from r in roomRepository.GetByStatus(status)
-                        select RoomResponseModel()
-                        {
-
-            };
-
-
-            return new RoomResponseModel
+            var rooms = await roomRepository.GetByStatusAsync(status);
+            List<RoomResponseModel> listRoomsResponse = new List<RoomResponseModel>();
+            foreach (Room room in rooms)
             {
-                Number = room.Number,
-                Beds = room.Beds,
-                Facilities = new GetFacility
-                {
-                    Wifi = room.Facilities.Wifi,
-                    AC = room.Facilities.AC,
-                    TV = room.Facilities.TV,
-                    NSR = room.Facilities.NSR
-                }
 
-            };*/
-            return null;
+                var roomResponse = new RoomResponseModel
+                {
+                    Number = room.Number,
+                    Beds = room.Beds,
+                    Facilities = new GetFacility
+                    {
+                        Wifi = room.Facilities.Wifi,
+                        AC = room.Facilities.AC,
+                        TV = room.Facilities.TV,
+                        NSR = room.Facilities.NSR
+                    },
+                    
+                    Reserved = room.Reserved
+                };
+                listRoomsResponse.Add(roomResponse);
+            }
+            return listRoomsResponse;
         }
 
         public void Delete(string id)
@@ -95,29 +96,29 @@ namespace HotelAutomation.Application.Services
             // automapper
 
             var updatedroom = this.roomRepository.Update(room, id);
-            
 
 
-           
-            
 
-                return new UpdateRoomResponseModel
+
+
+
+            return new UpdateRoomResponseModel
+            {
+                Id = updatedroom.Id,
+                Number = updatedroom.Number,
+                Beds = updatedroom.Beds,
+                Facilities = new FacilityResponseModel
                 {
-                    Id = updatedroom.Id,
-                    Number = updatedroom.Number,
-                    Beds = updatedroom.Beds,
-                   Facilities = new FacilityResponseModel
-                   {
-                       Wifi = updatedroom.Facilities.Wifi,
-                       AC= updatedroom.Facilities.AC,
-                       TV = updatedroom.Facilities.TV,
-                       NSR = updatedroom.Facilities.NSR
-                   }
-                };
+                    Wifi = updatedroom.Facilities.Wifi,
+                    AC = updatedroom.Facilities.AC,
+                    TV = updatedroom.Facilities.TV,
+                    NSR = updatedroom.Facilities.NSR
+                }
+            };
             //automapper
-           
 
-           
+
+
 
         }
     }

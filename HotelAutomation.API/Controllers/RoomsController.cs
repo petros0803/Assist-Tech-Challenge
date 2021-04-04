@@ -35,10 +35,9 @@ namespace HotelAutomation.API.Controllers
 
         [AllowAnonymous]
         [HttpGet]
-        public IActionResult GetRoomByStatus([FromQuery]  bool status)
+        public async System.Threading.Tasks.Task<IActionResult> GetRoomByStatusAsync([FromQuery]  bool status )
         {
-
-            return Ok(roomService.GetByStatus(status));
+            return Ok(await roomService.GetByStatusAsync(status));
         }
 
         [AllowAnonymous]
