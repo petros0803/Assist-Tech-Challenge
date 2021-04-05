@@ -11,4 +11,6 @@
     <color name="Black">#191C2F</color>
     <color name="mildGray">#857C8D</color>
     <color name="turcoaz">#247BA0</color>
+    <color name="brightGreen">#66ff00</color>
+    <color name="brightRed">#ff0000</color>
 </resources>

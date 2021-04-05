@@ -28,11 +28,6 @@
         android:theme="@style/Theme.MyHotel"
         android:usesCleartextTraffic="true" >
         <activity
-            android:name="com.example.myhotel.ui.main"
-            android:label="@string/title_activity_main"
-            android:theme="@style/Theme.MyHotel.NoActionBar" >
-        </activity>
-        <activity
             android:name="com.example.myhotel.ui.MainMenu"
             android:hardwareAccelerated="true"
             android:screenOrientation="portrait"

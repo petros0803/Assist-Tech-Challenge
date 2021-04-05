@@ -15,4 +15,5 @@
         android:layout_height="90dp"
         app:srcCompat="@drawable/ic_communication___smartphone__mobile__phone__city__buildings__message__text"
         android:layout_gravity="center"/>
+
 </LinearLayout>

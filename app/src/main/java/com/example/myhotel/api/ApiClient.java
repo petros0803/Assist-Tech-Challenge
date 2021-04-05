@@ -22,9 +22,9 @@ public class ApiClient {
 
     }
 
-    public static ApiInterface getApiInterface()
+    public static RestApiInterface getApiInterface()
     {
-        return getApiClient().create(ApiInterface.class);
+        return getApiClient().create(RestApiInterface.class);
     }
     }
 

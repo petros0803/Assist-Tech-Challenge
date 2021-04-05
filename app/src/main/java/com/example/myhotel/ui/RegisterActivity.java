@@ -14,7 +14,7 @@ import android.widget.Toast;
 
 import com.example.myhotel.R;
 import com.example.myhotel.api.ApiClient;
-import com.example.myhotel.api.ApiInterface;
+import com.example.myhotel.api.RestApiInterface;
 
 import com.example.myhotel.api.models.Register;
 
@@ -172,7 +172,7 @@ public class RegisterActivity extends AppCompatActivity {
             reg.setPhoneNumber(phone.getEditableText().toString().trim());
             reg.setRole("user");
 
-            Call<Register> call = ApiClient.getApiClient().create(ApiInterface.class).performREGISTER(reg);
+            Call<Register> call = ApiClient.getApiClient().create(RestApiInterface.class).performREGISTER(reg);
 
             call.enqueue(new Callback<Register>() {
                 @Override

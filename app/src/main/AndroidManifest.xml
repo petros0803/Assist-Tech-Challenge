@@ -17,11 +17,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyHotel"
         android:usesCleartextTraffic="true" >
-        <activity
-            android:name=".ui.main"
-            android:label="@string/title_activity_main"
-            android:theme="@style/Theme.MyHotel.NoActionBar" >
-        </activity>
+
         <activity
             android:name=".ui.MainMenu"
             android:hardwareAccelerated="true"
@@ -44,7 +40,6 @@
             android:windowSoftInputMode="adjustNothing" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

@@ -37,23 +37,16 @@ public class LoginActivity extends AppCompatActivity {
         pass = findViewById(R.id.pass_input);
         Button btn_login = findViewById(R.id.lgn_btn);
 
+        btn_login.setOnClickListener(v -> {
 
-        btn_login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                if (validateCredentials()) {
-                    login();
-
-                }
+            if (validateCredentials()) {
+                login();
             }
         });
-        new_account.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(getApplicationContext(), RegisterActivity.class));
-                        finish();
-            }
+
+        new_account.setOnClickListener(v -> {
+            startActivity(new Intent(getApplicationContext(), RegisterActivity.class));
+                    finish();
         });
     }
 

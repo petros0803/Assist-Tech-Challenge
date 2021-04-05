@@ -4,6 +4,7 @@
         <item name="colorPrimary">@color/turcoaz</item>
         <item name="colorPrimaryDark">@color/Black</item>
         <item name="android:statusBarColor" tools:targetApi="l">@color/Black</item>
+
         <!-- Customize your theme here. -->
     </style>
     <style name="Theme.MyHotel.NoActionBar">
@@ -12,5 +13,8 @@
     </style>
     <style name="Theme.MyHotel.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
     <style name="Theme.MyHotel.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-
+    <style name="SwitchTextAppearance" parent="@android:style/TextAppearance.Holo.Small">
+        <item name="android:textColor">@color/creamWhite</item>
+        <item name="android:fontFamily">@font/josefin_sans_semibold</item>
+    </style>
 </resources>

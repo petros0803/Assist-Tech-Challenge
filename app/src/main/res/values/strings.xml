@@ -26,7 +26,7 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-<string name="Open">Open</string>
+    <string name="Open">Open</string>
     <string name="Close">Closer</string>
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
@@ -39,4 +39,13 @@
     <string name="single_rooms">Single rooms</string>
     <string name="roomdescriprition">%roomDescriprition%</string>
     <string name="roomtype">%roomType%</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="chose_from_the_available_offers_down_below">Choose from the available offers below:</string>
+    <string name="available_reservation">Available reservation</string>
+    <string name="my_reservation">My Reservation</string>
+    <string name="available_reservations">Available reservations</string>
+    <string name="my_reservations">My reservations</string>
+    <string name="i_would_appear_you_have_no_reservations">It appears you have no reservations</string>
+    <string name="price">%price%</string>
 </resources>
