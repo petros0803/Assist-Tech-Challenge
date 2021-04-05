@@ -1,4 +1,5 @@
-﻿using HotelAutomation.Application.Common.Models.RoomModels;
+﻿using HotelAutomation.Application.Common.Models.RervationModels;
+using HotelAutomation.Application.Common.Models.RoomModels;
 using HotelAutomation.Application.Services;
 using HotelAutomation.Domain.Entitities;
 using Microsoft.AspNetCore.Authorization;
@@ -10,23 +11,23 @@ namespace HotelAutomation.API.Controllers
     [Route("api/[controller]")]
     [ApiController]
     [Authorize]
-    public class RoomsController : ControllerBase
+    public class ReservationsController : ControllerBase
     {
-        private readonly RoomService roomService;
+        private readonly ReservationService reservationService;
 
-        public RoomsController(RoomService roomService)
+        public ReservationsController(ReservationService reservationService)
         {
-            this.roomService = roomService;
+            this.reservationService = reservationService;
         }
         [AllowAnonymous]
         [HttpPost]
-        public IActionResult RegisterRoom(Room room)
+        public IActionResult RegisterReservation(ReservationRequestModel reservation)
         {
-            roomService.Add(room);
-            return Ok();
+            
+            return Ok(reservationService.Add(reservation));
         }
 
-        [AllowAnonymous]
+        /*[AllowAnonymous]
         [HttpGet("{id}")]
         public IActionResult GetRoomById(string id)
         {
@@ -36,9 +37,9 @@ namespace HotelAutomation.API.Controllers
 
         [AllowAnonymous]
         [HttpGet]
-        public IActionResult GetRoomByStatusAsync([FromQuery]  RoomFilterModel filter )
+        public async Task<IActionResult> GetRoomByStatusAsync([FromQuery]  RoomFilterModel filter )
         {
-            return Ok(roomService.GetByStatus(filter));
+            return Ok(await roomService.GetByStatusAsync(filter));
         }
 
         [AllowAnonymous]
@@ -54,6 +55,6 @@ namespace HotelAutomation.API.Controllers
         {
 
             return Ok(roomService.Update(room, id));
-        }
+        }*/
     }
 }

@@ -10,12 +10,14 @@ namespace HotelAutomation.Application.Common.Models.UserModels
     {
         public string Number { get; set; }
 
-        public string Beds { get; set; }
+        public int? Beds { get; set; }
 
         public Facility Facilities { get; set; }
 
+        public double Price { get; set; }
 
-        
+
+
     }
     public class Facility
     {

@@ -1,4 +1,5 @@
-﻿using HotelAutomation.Domain.Entitities;
+﻿using HotelAutomation.Application.Common.Models.RoomModels;
+using HotelAutomation.Domain.Entitities;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -14,7 +15,7 @@ namespace HotelAutomation.Application.Common.Interfaces.Repositories
 
         Room GetById(string id);
 
-        Task<List<Room>> GetByStatusAsync(bool status);
+        List<Room> GetByStatus(RoomFilterModel filter);
 
     }
 }

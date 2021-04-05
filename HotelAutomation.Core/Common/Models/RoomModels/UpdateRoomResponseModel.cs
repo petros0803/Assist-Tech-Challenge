@@ -10,11 +10,13 @@ namespace HotelAutomation.Application.Common.Models.RoomModels
         public string Id { get; set; }
         public string Number { get; set; }
 
-        public string Beds { get; set; }
+        public int? Beds { get; set; }
 
         public FacilityResponseModel Facilities { get; set; }
 
         public bool Reserved { get; set; }
+
+        public double Price { get; set; }
 
     }
     public class FacilityResponseModel

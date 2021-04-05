@@ -41,9 +41,13 @@ namespace HotelAutomation.API
 
             services.AddScoped<RoomService>();
 
+            services.AddScoped<ReservationService>();
+
             services.AddScoped<IUserRepository, UserRepository>();
 
             services.AddScoped<IRoomRepository, RoomRepository>();
+
+            services.AddScoped<IReservationRepository, ReservationRepository>();
 
             services.AddAutoMapper(config =>
             {
