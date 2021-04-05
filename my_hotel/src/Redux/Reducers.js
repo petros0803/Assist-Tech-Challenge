@@ -5,7 +5,7 @@ import {
 } from './Constants'
 
 const initialStateLogin = {
-    isLoggedin: false,
+    isLoggingin: false,
     loginToken: [],
     error: ''
 }
@@ -13,11 +13,12 @@ const initialStateLogin = {
 export const requestLoginReducer = (state = initialStateLogin, action = {}) => {
     switch (action.type) {
         case REQUEST_LOGIN_PENDING:
-            return Object.assign({}, state, { isLoggedin: true })
+            return Object.assign({}, state, { isLoggingin: true })
         case REQUEST_LOGIN_SUCCESS:
-            return Object.assign({}, state, { loginToken: action.payload, isLoggedin: false })
+            localStorage.setItem('User_Login_Token', action.payload.token);
+            return Object.assign({}, state, { loginToken: action.payload, isLoggingin: false })
         case REQUEST_LOGIN_FAILED:
-            return Object.assign({}, state, { error: "Fetch Failed! Cannot retrieved data!", isLoggedin: false })
+            return Object.assign({}, state, { error: "Fetch Failed! Cannot retrieved data!", isLoggingin: false })
         default:
             return state;
     }

@@ -73,3 +73,9 @@ span{
     font-size: 16px;
     padding-left: 10px;
 }
+
+.form_loginSpinner{
+    position: absolute;
+    top: 65%;
+    left: 47%;
+}

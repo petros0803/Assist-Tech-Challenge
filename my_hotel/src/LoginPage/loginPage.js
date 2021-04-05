@@ -1,7 +1,9 @@
 import React from 'react'
 import { useForm } from 'react-hook-form'
-import './loginpage.css'
 import { useDispatch } from 'react-redux'
+import Spinner from 'react-bootstrap/Spinner'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './loginpage.css'
 
 const LoginPage = (props) => {
     const { register, handleSubmit, formState: { errors } } = useForm();
@@ -13,6 +15,7 @@ const LoginPage = (props) => {
 
     return (
         <div>
+            {/* {console.log("LOGIN PAGE@@@@", props.store.requestLogin)} */}
             <form className="form-container" onSubmit={handleSubmit(onSubmit)}>
                 <h1 className="form__logintitle">Login</h1>
                 <div className="form__inputs">
@@ -42,7 +45,10 @@ const LoginPage = (props) => {
 
                     {errors.password && (<span> {errors.password.message} </span>)}
                 </div>
-                <input type="submit" className="form__loginbutton" value="Login" />
+                <div>
+                    {props.store.requestLogin.isLoggingin === true && <Spinner animation="border" role="status" varian="danger" className="form_loginSpinner"/>}
+                    <input type="submit" className="form__loginbutton" value="Login" />
+                </div>
             </form>
         </div>
     )
