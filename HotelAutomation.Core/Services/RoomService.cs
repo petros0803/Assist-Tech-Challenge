@@ -7,6 +7,7 @@ using HotelAutomation.Domain.Exceptions;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -38,6 +39,7 @@ namespace HotelAutomation.Application.Services
             {
                 Number = room.Number,
                 Beds = room.Beds,
+                Price = room.Price,
                 Facilities = new GetFacility
                 {
                     Wifi = room.Facilities.Wifi,
@@ -51,31 +53,52 @@ namespace HotelAutomation.Application.Services
 
         }
 
-        public async Task<List<RoomResponseModel>> GetByStatusAsync(bool status)
+        public List<RoomResponseModel> GetByStatus(RoomFilterModel filter)
         {
-
-            var rooms = await roomRepository.GetByStatusAsync(status);
-            List<RoomResponseModel> listRoomsResponse = new List<RoomResponseModel>();
-            foreach (Room room in rooms)
+            
+                var rooms = roomRepository.GetByStatus(filter);
+                List<RoomResponseModel> listRoomsResponse = new List<RoomResponseModel>();
+            if (filter != null)
             {
+                if (filter.BedsNumber != null)
+                    rooms = rooms.Where(x => x.Beds == filter.BedsNumber).ToList();
+                if (filter.status != null)
+                    rooms = rooms.Where(x => x.Reserved == filter.status).ToList();
+                if (filter.AC != null)
+                    rooms = rooms.Where(x => x.Facilities.AC == filter.AC).ToList();
+                if (filter.Wifi != null)
+                    rooms = rooms.Where(x => x.Facilities.Wifi == filter.Wifi).ToList();
+                if (filter.TV != null)
+                    rooms = rooms.Where(x => x.Facilities.TV == filter.TV).ToList();
+                if (filter.NSR != null)
+                    rooms = rooms.Where(x => x.Facilities.NSR == filter.NSR).ToList();
 
-                var roomResponse = new RoomResponseModel
-                {
-                    Number = room.Number,
-                    Beds = room.Beds,
-                    Facilities = new GetFacility
-                    {
-                        Wifi = room.Facilities.Wifi,
-                        AC = room.Facilities.AC,
-                        TV = room.Facilities.TV,
-                        NSR = room.Facilities.NSR
-                    },
-                    
-                    Reserved = room.Reserved
-                };
-                listRoomsResponse.Add(roomResponse);
             }
-            return listRoomsResponse;
+            foreach (Room room in rooms)
+                {
+
+
+                    var roomResponse = new RoomResponseModel
+                    {
+                        Number = room.Number,
+                        Beds = room.Beds,
+                        Price = room.Price,
+                        Facilities = new GetFacility
+                        {
+                            Wifi = room.Facilities.Wifi,
+                            AC = room.Facilities.AC,
+                            TV = room.Facilities.TV,
+                            NSR = room.Facilities.NSR
+                        },
+
+                        Reserved = room.Reserved
+                    };
+                    listRoomsResponse.Add(roomResponse);
+                }
+                return listRoomsResponse;
+
+            
+          
         }
 
         public void Delete(string id)
@@ -89,7 +112,7 @@ namespace HotelAutomation.Application.Services
             var room = roomRepository.GetById(id);
 
             room.Number = model.Number;
-            room.Beds = model.Beds;
+            room.Beds = (int)model.Beds;
             room.Facilities.TV = model.Facilities.TV;
             room.Facilities.AC = model.Facilities.AC;
             room.Facilities.NSR = model.Facilities.NSR;
@@ -97,16 +120,12 @@ namespace HotelAutomation.Application.Services
 
             var updatedroom = this.roomRepository.Update(room, id);
 
-
-
-
-
-
             return new UpdateRoomResponseModel
             {
                 Id = updatedroom.Id,
                 Number = updatedroom.Number,
                 Beds = updatedroom.Beds,
+                Price = updatedroom.Price,
                 Facilities = new FacilityResponseModel
                 {
                     Wifi = updatedroom.Facilities.Wifi,
