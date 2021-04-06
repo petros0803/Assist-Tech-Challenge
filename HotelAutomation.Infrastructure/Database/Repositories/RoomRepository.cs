@@ -48,48 +48,19 @@ namespace HotelAutomation.Infrastructure.Database.Repositories
             return room;
         }
 
-
         public Room Update(Room room, string id)
         {
             _roomsCollection.ReplaceOne(r => r.Id == id, room);
             return room;
         }
 
-        
-
         public List<Room> GetByStatus(RoomFilterModel filter)
         {
             var rooms = _roomsCollection.AsQueryable();
            
-
-            //IQueryable<Room>
-            /*if(filter != null)
-            {
-                if (filter.BedsNumber != null)
-                    rooms = rooms.Where(x => x.Beds == filter.BedsNumber);
-                if (filter.status != null)
-                    rooms = rooms.Where(x => x.Reserved == filter.status);
-                if (filter.AC !=null)
-                    rooms = rooms.Where(x => x.Facilities.AC == filter.AC);
-                if (filter.Wifi != null)
-                    rooms = rooms.Where(x => x.Facilities.Wifi == filter.Wifi);
-                if (filter.TV != null)
-                    rooms = rooms.Where(x => x.Facilities.TV == filter.TV);
-                if (filter.NSR != null)
-                    rooms = rooms.Where(x => x.Facilities.NSR == filter.NSR);
-
-            }*/
-            
-               
-            
-
             return rooms.ToList();
 
-
-
-
         }
-
         
     }
 }

@@ -16,7 +16,11 @@ namespace HotelAutomation.Application.Common.Models.RoomModels
 
         public bool Reserved { get; set; }
 
-        public double Price { get; set; }
+        public double? Price { get; set; }
+
+        public DateTime? StartDate { get; set; }
+
+        public DateTime? ExpirationDate { get; set; }
 
     }
     public class FacilityResponseModel

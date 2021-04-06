@@ -14,7 +14,7 @@ namespace HotelAutomation.Application.Common.Models.UserModels
 
         public Facility Facilities { get; set; }
 
-        public double Price { get; set; }
+        public double? Price { get; set; }
 
 
 

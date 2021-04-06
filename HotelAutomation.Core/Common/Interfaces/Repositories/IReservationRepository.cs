@@ -15,5 +15,7 @@ namespace HotelAutomation.Application.Common.Interfaces.Repositories
         Reservation Update(Reservation reservation, string id);
 
         Reservation GetById(string id);
+
+        List<Reservation> GetAllReservations();
     }
 }

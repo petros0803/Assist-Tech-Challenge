@@ -27,13 +27,29 @@ namespace HotelAutomation.API.Controllers
             return Ok(reservationService.Add(reservation));
         }
 
-        /*[AllowAnonymous]
-        [HttpGet("{id}")]
-        public IActionResult GetRoomById(string id)
+        [AllowAnonymous]
+        [HttpDelete("{id}")]
+        public IActionResult DeleteRoom(string id)
         {
-            
-            return Ok(roomService.GetById(id));
+            reservationService.Delete(id);
+            return Ok();
         }
+
+        [AllowAnonymous]
+        [HttpGet("{id}")]
+        public IActionResult GetReservationVyId(string id)
+        {
+
+            return Ok(reservationService.GetById(id));
+        }
+
+        [AllowAnonymous]
+        [HttpGet]
+        public  IActionResult GetAllRooms()
+        {
+            return Ok(reservationService.GetAllReservations());
+        }
+        /*
 
         [AllowAnonymous]
         [HttpGet]
@@ -42,13 +58,7 @@ namespace HotelAutomation.API.Controllers
             return Ok(await roomService.GetByStatusAsync(filter));
         }
 
-        [AllowAnonymous]
-        [HttpDelete("{id}")]
-        public IActionResult DeleteRoom(string id)
-        {
-            roomService.Delete(id);
-            return Ok();
-        }
+        
         [AllowAnonymous]
         [HttpPut("{id}")]
         public IActionResult UpdateRoom(UpdateRoomRequestModel room, string id)

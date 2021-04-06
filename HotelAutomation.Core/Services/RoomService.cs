@@ -16,12 +16,14 @@ namespace HotelAutomation.Application.Services
     public class RoomService
     {
         private readonly IRoomRepository roomRepository;
+        private readonly IReservationRepository reservationRepository;
         private readonly IConfiguration configuration;
         private readonly IMapper mapper;
 
-        public RoomService(IRoomRepository roomRepository)
+        public RoomService(IRoomRepository roomRepository, IReservationRepository reservationRepository)
         {
             this.roomRepository = roomRepository;
+            this.reservationRepository = reservationRepository;
             //this.configuration = configuration;
         }
 
@@ -40,6 +42,8 @@ namespace HotelAutomation.Application.Services
                 Number = room.Number,
                 Beds = room.Beds,
                 Price = room.Price,
+                StartDate = room.StartDate,
+                ExpirationDate = room.ExpirationDate,
                 Facilities = new GetFacility
                 {
                     Wifi = room.Facilities.Wifi,
@@ -56,8 +60,10 @@ namespace HotelAutomation.Application.Services
         public List<RoomResponseModel> GetByStatus(RoomFilterModel filter)
         {
             
-                var rooms = roomRepository.GetByStatus(filter);
-                List<RoomResponseModel> listRoomsResponse = new List<RoomResponseModel>();
+            var rooms = roomRepository.GetByStatus(filter);
+            //var reservations = reservationRepository.GetAllReservations();
+           
+            List<RoomResponseModel> listRoomsResponse = new List<RoomResponseModel>();
             if (filter != null)
             {
                 if (filter.BedsNumber != null)
@@ -72,6 +78,11 @@ namespace HotelAutomation.Application.Services
                     rooms = rooms.Where(x => x.Facilities.TV == filter.TV).ToList();
                 if (filter.NSR != null)
                     rooms = rooms.Where(x => x.Facilities.NSR == filter.NSR).ToList();
+                if (filter.StartDate != null)
+                    rooms = rooms.Where(x => x.StartDate == filter.StartDate).ToList();
+                if (filter.ExpirationDate != null)
+                    rooms = rooms.Where(x => x.ExpirationDate == filter.ExpirationDate).ToList();
+
 
             }
             foreach (Room room in rooms)
@@ -83,6 +94,9 @@ namespace HotelAutomation.Application.Services
                         Number = room.Number,
                         Beds = room.Beds,
                         Price = room.Price,
+                        StartDate = room.StartDate,
+                        ExpirationDate = room.ExpirationDate,
+
                         Facilities = new GetFacility
                         {
                             Wifi = room.Facilities.Wifi,
@@ -100,6 +114,8 @@ namespace HotelAutomation.Application.Services
             
           
         }
+
+  
 
         public void Delete(string id)
         {
@@ -126,6 +142,8 @@ namespace HotelAutomation.Application.Services
                 Number = updatedroom.Number,
                 Beds = updatedroom.Beds,
                 Price = updatedroom.Price,
+                StartDate = updatedroom.StartDate,
+                ExpirationDate = updatedroom.ExpirationDate,
                 Facilities = new FacilityResponseModel
                 {
                     Wifi = updatedroom.Facilities.Wifi,

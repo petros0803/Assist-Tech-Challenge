@@ -15,7 +15,7 @@ namespace HotelAutomation.Application.Common.Models.RoomModels
 
         public bool Reserved { get; set; }
 
-        public double Price { get; set; }
+        public double? Price { get; set; }
 
 
     }
