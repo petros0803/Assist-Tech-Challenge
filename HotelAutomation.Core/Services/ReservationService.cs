@@ -2,9 +2,11 @@
 using AutoMapper.Configuration;
 using HotelAutomation.Application.Common.Interfaces.Repositories;
 using HotelAutomation.Application.Common.Models.RervationModels;
+using HotelAutomation.Application.Common.Models.RoomModels;
 using HotelAutomation.Domain.Entitities;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace HotelAutomation.Application.Services
@@ -57,6 +59,8 @@ namespace HotelAutomation.Application.Services
             var reservation = reservationRepository.GetById(id);
             var room = roomRepository.GetById(reservation.RoomId);
             room.Reserved = false;
+            room.StartDate = null;
+            room.ExpirationDate = null;
             roomRepository.Update(room, reservation.RoomId);
             reservationRepository.Delete(id);
 
@@ -105,16 +109,64 @@ namespace HotelAutomation.Application.Services
         }
 
 
-        public List<Reservation> GetUserReservations(string id)
+        public List<RoomResponseModel> GetUserReservations(string id)
         {
             var user = userRepository.GetById(id);
             var reservations = reservationRepository.GetAllReservations();
+
+            List<RoomResponseModel> listRoomsResponse = new List<RoomResponseModel>();
+            if (user.Id != null)
+                reservations = reservations.Where(x => x.UserId == user.Id).ToList();
+
             foreach (Reservation reservation in reservations)
             {
+                var room = roomRepository.GetById(reservation.RoomId);
+
+                var roomModel = new RoomResponseModel
+                {
+                    Number = room.Number,
+                    Beds = room.Beds,
+                    Price = room.Price,
+                    StartDate = room.StartDate,
+                    ExpirationDate = room.ExpirationDate,
+                    Facilities = new GetFacility
+                    {
+                        Wifi = room.Facilities.Wifi,
+                        AC = room.Facilities.AC,
+                        TV = room.Facilities.TV,
+                        NSR = room.Facilities.NSR
+                    }
+                };
+                listRoomsResponse.Add(roomModel);
 
             }
-            return null;
-            
+            return listRoomsResponse;
+
+
+
+            /*var user = userRepository.GetById(id);
+            var reservations = reservationRepository.GetAllReservations();
+            var rooms = roomRepository.GetAllRooms();
+            List<ReservationResponseModel> listReservationsResponse = new List<ReservationResponseModel>();
+            List<RoomResponseModel> listRoomsResponse = new List<RoomResponseModel>();
+            if (user.Id != null)
+                reservations = reservations.Where(x => x.UserId ==  user.Id).ToList();
+            foreach (Reservation reservation in reservations)
+            {
+                var room = roomRepository.GetById(reservation.RoomId);
+                
+                var reservationResponse = new ReservationResponseModel
+                {
+                    
+                    UserId = reservation.UserId,
+                    RoomId = reservation.RoomId,
+                    StartDate = reservation.StartDate,
+                    ExpirationDate = reservation.ExpirationDate
+                };
+                listReservationsResponse.Add(reservationResponse);
+            }
+            return listReservationsResponse;*/
+
         }
         /* 
 

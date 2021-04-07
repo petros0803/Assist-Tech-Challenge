@@ -22,8 +22,8 @@ namespace HotelAutomation.API.Controllers
         [HttpPost]
         public IActionResult RegisterRoom(Room room)
         {
-            roomService.Add(room);
-            return Ok();
+            
+            return Ok(roomService.Add(room));
         }
 
         [AllowAnonymous]

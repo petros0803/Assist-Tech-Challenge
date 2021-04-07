@@ -2,12 +2,14 @@
 using HotelAutomation.Application.Common.Exceptions;
 using HotelAutomation.Application.Common.Interfaces.Repositories;
 using HotelAutomation.Application.Common.Models;
+using HotelAutomation.Application.Common.Models.RoomModels;
 using HotelAutomation.Application.Common.Models.UserModels;
 using HotelAutomation.Application.Common.Models.Users;
 using HotelAutomation.Domain.Entitities;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System;
+using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -81,6 +83,39 @@ namespace HotelAutomation.Application.Services
                 throw new BadRequestException();
             }
         }
+        /*public List<RoomResponseModel> GetUserReservations(string id)
+        {
+            var user = userRepository.GetById(id);
+
+            List<RoomResponseModel> listRoomsResponse = new List<RoomResponseModel>();
+
+            foreach (Room room in rooms)
+            {
+
+
+                var roomResponse = new RoomResponseModel
+                {
+                    Number = room.Number,
+                    Beds = room.Beds,
+                    Price = room.Price,
+                    StartDate = room.StartDate,
+                    ExpirationDate = room.ExpirationDate,
+
+                    Facilities = new GetFacility
+                    {
+                        Wifi = room.Facilities.Wifi,
+                        AC = room.Facilities.AC,
+                        TV = room.Facilities.TV,
+                        NSR = room.Facilities.NSR
+                    },
+
+                    Reserved = room.Reserved
+                };
+                listRoomsResponse.Add(roomResponse);
+            }
+            return listRoomsResponse;
+        }*/
+
         private string GenerateToken(User user)
         {
             var secretKey = configuration.GetValue<string>("JwtConfiguration:SecretKey");

@@ -2,6 +2,7 @@
 using HotelAutomation.Application.Common.Exceptions;
 using HotelAutomation.Application.Common.Interfaces.Repositories;
 using HotelAutomation.Application.Common.Models.RoomModels;
+using HotelAutomation.Application.Common.Models.UserModels;
 using HotelAutomation.Domain.Entitities;
 using HotelAutomation.Domain.Exceptions;
 using Microsoft.Extensions.Configuration;
@@ -27,9 +28,10 @@ namespace HotelAutomation.Application.Services
             //this.configuration = configuration;
         }
 
-        public void Add(Room room)
+        public string  Add(Room room)
         {
             roomRepository.Insert(room);
+            return room.Id;
 
         }
 

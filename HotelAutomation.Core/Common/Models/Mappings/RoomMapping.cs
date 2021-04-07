@@ -12,7 +12,7 @@ namespace HotelAutomation.Application.Common.Models.Mappings
     {
         public RoomMapping()
         {
-            CreateMap<CreateRoomRespomseModel, Room>();
+            CreateMap<CreateRoomResponseModel, Room>();
             CreateMap<UpdateRoomRequestModel, Room>();
             
         }

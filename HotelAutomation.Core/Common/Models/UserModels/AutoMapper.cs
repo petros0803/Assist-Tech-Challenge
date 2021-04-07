@@ -13,9 +13,9 @@ namespace HotelAutomation.Application.Common.Models.Users
         public AutoMapper()
         {
             CreateMap<LoginModel, User>();
-            CreateMap<CreateRoomRespomseModel, Room>();
+            CreateMap<CreateRoomResponseModel, Room>();
             CreateMap<UpdateRoomRequestModel, Room>();
-            CreateMap<Room, CreateRoomRespomseModel>();
+            CreateMap<Room, CreateRoomResponseModel>();
         }
     }
 }

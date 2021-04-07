@@ -17,5 +17,7 @@ namespace HotelAutomation.Application.Common.Interfaces.Repositories
 
         List<Room> GetByStatus(RoomFilterModel filter);
 
+        List<Room> GetAllRooms();
+
     }
 }

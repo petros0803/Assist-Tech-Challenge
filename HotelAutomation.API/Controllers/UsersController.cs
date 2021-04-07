@@ -25,9 +25,6 @@ namespace HotelAutomation.API.Controllers
             
             return Ok(userService.Add(user));
         }
-        
-        
-
 
         [HttpGet("{id}")]
         public IActionResult Get(string id)
@@ -36,6 +33,8 @@ namespace HotelAutomation.API.Controllers
             return Ok(userService.GetById(id));
 
         }
+
+    
 
         [AllowAnonymous]
         [HttpPost("authenticate")]

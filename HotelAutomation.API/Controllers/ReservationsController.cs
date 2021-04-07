@@ -35,19 +35,26 @@ namespace HotelAutomation.API.Controllers
             return Ok();
         }
 
-        [AllowAnonymous]
+        /*[AllowAnonymous]
         [HttpGet("{id}")]
-        public IActionResult GetReservationVyId(string id)
+        public IActionResult GetReservationById(string id)
         {
 
             return Ok(reservationService.GetById(id));
-        }
+        }*/
 
         [AllowAnonymous]
         [HttpGet]
         public  IActionResult GetAllRooms()
         {
             return Ok(reservationService.GetAllReservations());
+        }
+
+        [AllowAnonymous]
+        [HttpGet("{id}")]
+        public IActionResult GetUserReservedRooms(string id)
+        {
+            return Ok(reservationService.GetUserReservations(id));
         }
         /*
 

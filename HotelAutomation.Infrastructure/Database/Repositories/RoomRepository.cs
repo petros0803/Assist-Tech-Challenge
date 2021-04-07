@@ -61,6 +61,14 @@ namespace HotelAutomation.Infrastructure.Database.Repositories
             return rooms.ToList();
 
         }
-        
+
+        public List<Room> GetAllRooms()
+        {
+            var rooms = _roomsCollection.AsQueryable();
+
+            return rooms.ToList();
+
+        }
+
     }
 }

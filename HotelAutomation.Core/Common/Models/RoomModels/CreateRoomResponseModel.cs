@@ -6,8 +6,10 @@ using System.Text;
 
 namespace HotelAutomation.Application.Common.Models.UserModels
 {
-    class CreateRoomRespomseModel : BaseIdResponseModel
+    public class CreateRoomResponseModel : BaseIdResponseModel
     {
+        //public string Id { get; set; }
+
         public string Number { get; set; }
 
         public int? Beds { get; set; }

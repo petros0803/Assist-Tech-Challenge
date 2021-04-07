@@ -44,6 +44,8 @@ namespace HotelAutomation.Infrastructure.Database.Repositories
                 return reservation;
             }
 
+        
+
         public Reservation Update(Reservation reservation, string id)
             {
                 _reservation.ReplaceOne(r => r.Id == id, reservation);
