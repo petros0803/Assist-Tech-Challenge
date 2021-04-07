@@ -41,6 +41,8 @@ namespace HotelAutomation.API
 
             services.AddScoped<RoomService>();
 
+            services.AddScoped<MailService>();
+
             services.AddScoped<ReservationService>();
 
             services.AddScoped<IUserRepository, UserRepository>();

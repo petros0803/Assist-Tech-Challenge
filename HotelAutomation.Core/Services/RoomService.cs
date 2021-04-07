@@ -114,11 +114,7 @@ namespace HotelAutomation.Application.Services
                 }
                 return listRoomsResponse;
 
-            
-          
         }
-
-  
 
         public void Delete(string id)
         {
@@ -135,6 +131,8 @@ namespace HotelAutomation.Application.Services
             room.Facilities.TV = model.Facilities.TV;
             room.Facilities.AC = model.Facilities.AC;
             room.Facilities.NSR = model.Facilities.NSR;
+            room.Facilities.Wifi = model.Facilities.Wifi;
+            room.Price = (int)model.Price;
             // automapper
 
             var updatedroom = this.roomRepository.Update(room, id);
