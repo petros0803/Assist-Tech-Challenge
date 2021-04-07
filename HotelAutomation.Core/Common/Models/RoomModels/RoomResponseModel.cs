@@ -6,6 +6,7 @@ namespace HotelAutomation.Application.Common.Models.RoomModels
 {
     public class RoomResponseModel
     {
+        public string Id { get; set; }
         public string Number { get; set; }
 
         public int? Beds { get; set; }

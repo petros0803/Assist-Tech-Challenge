@@ -93,6 +93,7 @@ namespace HotelAutomation.Application.Services
 
                     var roomResponse = new RoomResponseModel
                     {
+                        Id = room.Id,
                         Number = room.Number,
                         Beds = room.Beds,
                         Price = room.Price,
