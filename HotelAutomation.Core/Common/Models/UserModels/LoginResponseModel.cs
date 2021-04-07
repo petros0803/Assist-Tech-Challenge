@@ -6,6 +6,8 @@ namespace HotelAutomation.Application.Common.Models.UserModels
 {
     public class LoginResponseModel
     {
+        public string Id { get; set; }
+
         public string Name { get; set; }
 
         public string Surname { get; set; }

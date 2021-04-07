@@ -33,6 +33,7 @@ namespace HotelAutomation.Application.Services
             userRepository.Insert(user);
             return  new UserRegisterResponseModel
             {
+                
                 Name = user.Name,
                 Surname = user.Surname,
                 Email = user.Email,
@@ -70,6 +71,7 @@ namespace HotelAutomation.Application.Services
 
                 return new LoginResponseModel
                 {
+                   Id = user.Id,
                     Name = user.Name,
                     Surname = user.Surname,
                     PhoneNumber = user.PhoneNumber,
