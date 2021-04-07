@@ -95,6 +95,7 @@ namespace HotelAutomation.Application.Services
 
                 var reservationResponse = new ReservationResponseModel
                 {
+                    Id = reservation.Id,
                     UserId = reservation.UserId,
                     RoomId = reservation.RoomId,
                     StartDate = reservation.StartDate,

@@ -8,6 +8,7 @@ namespace HotelAutomation.Application.Common.Models.RervationModels
 {
     public class ReservationResponseModel
     {
+        public string Id { get; set; }
 
         public string UserId { get; set; }
 

@@ -28,10 +28,10 @@ namespace HotelAutomation.Application.Services
             //this.configuration = configuration;
         }
 
-        public string  Add(Room room)
+        public void  Add(Room room)
         {
             roomRepository.Insert(room);
-            return room.Id;
+            
 
         }
 
