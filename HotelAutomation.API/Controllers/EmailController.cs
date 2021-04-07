@@ -19,12 +19,12 @@ namespace HotelAutomation.API.Controllers
         {
             this.mailService = mailService;
         }
-        /*[AllowAnonymous]
+        [AllowAnonymous]
         [HttpPost("send")]
         public IActionResult SendMail(MailRequest mail)
         {
             mailService.SendEmail(mail);
             return Ok(); 
-        }*/
+        }
     }
 }

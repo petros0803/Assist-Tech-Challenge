@@ -21,6 +21,8 @@ namespace HotelAutomation.Application.Common.Models.RoomModels
     }
     public class UpdateFacilityRequestModel
     {
+        public bool Wifi { get; set; }
+
         public bool AC { get; set; }
 
         public bool TV { get; set; }

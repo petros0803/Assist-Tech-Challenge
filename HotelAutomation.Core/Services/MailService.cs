@@ -31,14 +31,14 @@ namespace HotelAutomation.Application.Services
         public void SendEmail(MailRequest mail)
         {
             MailAddress to = new MailAddress(mail.ToEmail);
-            MailAddress from = new MailAddress("");
+            MailAddress from = new MailAddress("hotelautomation2021@gmail.com");
             MailMessage message = new MailMessage(from, to);
             message.Subject = mail.Subject;
             message.Body = mail.Body;
-            SmtpClient client = new SmtpClient("smtp.server.address", 2525)
+            SmtpClient client = new SmtpClient("smtp.gmail.com", 587)
             {
               
-                Credentials = new NetworkCredential("smtp_username", "smtp_password"),
+                Credentials = new NetworkCredential("hotelautomation2021@gmail.com", "AutomationHotel2021!"),
                 EnableSsl = true
             };
             
