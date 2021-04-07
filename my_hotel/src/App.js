@@ -1,25 +1,41 @@
 import React from 'react'
-import { requestLogin } from './Redux/Actions'
+import {
+  requestLogin,
+  requestLogout,
+  requestRooms,
+  requestAddRoom,
+  requestDeleteRoom,
+  requestGetRoom
+} from './Redux/Actions'
 import { connect } from 'react-redux'
 import Main from './Main'
 
 const mapStateToProps = state => {
   return {
-    requestLogin: state.requestLogin
+    requestLogin: state.requestLogin,
+    requestRooms: state.requestRooms,
+    requestAddRoom: state.requestAddRoom,
+    requestDeleteRoom: state.requestDeleteRoom,
+    requestGetRoom: state.requestGetRoom,
   }
 }
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    onRequestLogin: (data) => requestLogin(data)
+    onRequestLogin: (data) => requestLogin(data),
+    onRequestLogout: () => requestLogout(),
+    onRequestRooms: () => requestRooms(),
+    onRequestAddRoom: (data, options) => requestAddRoom(data, options),
+    onRequestDeleteRoom: (index) => requestDeleteRoom(index),
+    onRequestGetRoom: (index) => requestGetRoom(index),
   }
 }
 
 function App(props) {
   return (
-      <div className="App">
-        <Main store={props} />
-      </div>
+    <div className="App">
+      <Main store={props} />
+    </div>
   );
 }
 

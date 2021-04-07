@@ -15,7 +15,6 @@ const LoginPage = (props) => {
 
     return (
         <div>
-            {/* {console.log("LOGIN PAGE@@@@", props.store.requestLogin)} */}
             <form className="form-container" onSubmit={handleSubmit(onSubmit)}>
                 <h1 className="form__logintitle">Login</h1>
                 <div className="form__inputs">
@@ -46,6 +45,8 @@ const LoginPage = (props) => {
                     {errors.password && (<span> {errors.password.message} </span>)}
                 </div>
                 <div>
+                    {console.log(props.store.requestLogin.error)}
+                    {props.store.requestLogin.error !== "" && (<span className="form__loginRequestError">{props.store.requestLogin.error}</span>)}
                     {props.store.requestLogin.isLoggingin === true && <Spinner animation="border" role="status" varian="danger" className="form_loginSpinner"/>}
                     <input type="submit" className="form__loginbutton" value="Login" />
                 </div>

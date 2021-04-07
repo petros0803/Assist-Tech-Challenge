@@ -1,0 +1,9 @@
+.table__roomDataRow{
+    height:20px;
+}
+
+td{
+    text-align: center;
+    border-bottom: 1px #191C2F solid;
+    border-right: 1px #191C2F solid;
+}

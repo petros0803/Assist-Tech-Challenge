@@ -1,62 +1,47 @@
-body {
-    background-image: url("../Images/LoginBackgroundImage.svg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-color: #191C2F;
-    background-blend-mode: multiply;
-    font-family: Roboto;
-}
-
-@font-face {
-    src: url(../Fonts/Roboto-Regular.ttf);
-    font-family: Roboto;
-  }
-
-.form-container{
+.form__addEditContainer{
     width: 500px;
-    height: 735px;
+    height: 700px;
     border-radius: 15px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     background: rgba(133, 124, 141, 0.5);
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 55%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
-.form__logintitle{
+.form_addEditTitle{
     color: #F7FFF7;
     font-size: 64px;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 10px;
 }
 
-input{
+.from__inputs{
     width: 365px;
     height: 50px;
     border-radius: 10px;
     border: 0px;
-    margin-top: 20px;
+    margin-top: 0px !important;
     padding-left: 10px;
     outline:0px;
     font-size: 24px;
 }
 
-.form__inputs{
+.form__addEditInputs{
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 40%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
-.form__loginbutton{
+.form__addEditRoomButton{
     width: 265px;
     height: 65px;
     position: absolute;
-    top: 75%;
+    top: 160%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -65,27 +50,32 @@ input{
     font-size: 32px;
 }
 
-.form__loginbutton:hover{
+.form__addEditRoomButton:hover{
     border: 3px black solid;
 }
 
-span{
+#multiselectContainerReact{
+    color: black;
+    padding-top: 20px;
+    width: 365px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+.form__p{
+    margin-bottom: 0px !important;
+    margin-top: 15px !important;
+}
+
+.from__pDisplayErrors{
     color: red;
-    font-size: 16px;
-    padding-left: 10px;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
 }
 
-.form_loginSpinner{
+.form_displayErrorsDiv{
+    margin-top: 75px;
     position: absolute;
-    top: 65%;
-    left: 47%;
-}
-
-.form__loginRequestError{
-    position: absolute;
-    top: 85%;
-    width: 300px;
     text-align: center;
-    left: 19%;
+    left: 6%;
 }
-
