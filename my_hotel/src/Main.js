@@ -5,6 +5,7 @@ import LoginPage from './LoginPage/LoginPage'
 import Rooms from './Rooms/Rooms'
 import Navbar from './Navbar/Navbar'
 import AddEditRoom from './Rooms/AddEditRoom'
+import ReservedRoom from './Rooms/ReservedRoom';
 
 const Main = (props) => {
     return (
@@ -16,6 +17,7 @@ const Main = (props) => {
                 <Route path='/admin/rooms' exact render={() => localStorage.getItem('User_Login_Token') ? <Rooms store={props.store} /> : <Redirect to='/login' />} />
                 <Route path='/admin/rooms/add' exact render={() => localStorage.getItem('User_Login_Token') ? <AddEditRoom store={props.store} addRoom={true} /> : <Redirect to='/login' />} />
                 <Route path='/admin/rooms/edit/:id' render={() => localStorage.getItem('User_Login_Token') ? <AddEditRoom store={props.store} addRoom={false} /> : <Redirect to='/login' />} />
+                <Route path='/admin/reservations' render={() => localStorage.getItem('User_Login_Token') ? <ReservedRoom store={props.store} /> : <Redirect to='/login' />} />
             </div>
         </Router>
     )

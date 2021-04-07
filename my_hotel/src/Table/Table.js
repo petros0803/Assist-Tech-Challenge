@@ -7,6 +7,10 @@ const Table = (props) => {
     const redirectToAddEditRoom = () => {
         history.push("/admin/rooms/add");
     }
+
+    const checkReserved = () => {
+        return props.reserved
+    }
     
     return (
         <div>
@@ -33,10 +37,14 @@ const Table = (props) => {
                     </tr>
                 </thead>
                 <tbody>
-                    {/* mapeaza roomurile si da ca parametru la roomrow */}
-                    {props.store.requestRooms.rooms.map((room, i) =>
+                    { props.reserved === false ? props.store.requestRooms.rooms.map((room, i) =>
                         <RoomRow room={room} key={i} store={props.store} />
-                    )}
+                    ) : 
+                    props.store.requestRooms.rooms.map((room, i) =>
+                        room.reserved === true ? 
+                        <RoomRow room={room} key={i} store={props.store} /> : console.log(room.reserved))
+                    }
+
                 </tbody>
             </table>
         </div>
