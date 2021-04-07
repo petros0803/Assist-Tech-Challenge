@@ -88,8 +88,7 @@ namespace HotelAutomation.API
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "HotelAutomation.API v1"));
+               
             }
             app.UseCors(corsPolicyBuilder =>
                    corsPolicyBuilder.AllowAnyOrigin()
@@ -99,11 +98,8 @@ namespace HotelAutomation.API
 
             app.UseMiddleware<ExceptionHandlingMiddleware>();
 
-            app.UseCors(corsPolicyBuilder =>
-                  corsPolicyBuilder.AllowAnyOrigin()
-                                   .AllowAnyMethod()
-                                   .AllowAnyHeader()
-           );
+            app.UseSwagger();
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "HotelAutomation.API v1"));
 
             app.UseHttpsRedirection();
 
