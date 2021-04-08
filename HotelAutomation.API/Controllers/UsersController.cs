@@ -1,4 +1,5 @@
-﻿using HotelAutomation.Application.Common.Models.Users;
+﻿using HotelAutomation.Application.Common.Models.UserModels;
+using HotelAutomation.Application.Common.Models.Users;
 using HotelAutomation.Application.Services;
 using HotelAutomation.Domain.Entitities;
 using HotelAutomation.Domain.Exceptions;
@@ -20,10 +21,10 @@ namespace HotelAutomation.API.Controllers
         }
         [AllowAnonymous]
         [HttpPost]
-        public IActionResult Register(User user)
+        public IActionResult Register(UserRegisterModel user)
         {
-            
-            return Ok(userService.Add(user));
+            userService.Add(user);
+            return Ok();
         }
 
         [HttpGet("{id}")]
