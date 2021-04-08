@@ -21,9 +21,9 @@ namespace HotelAutomation.API.Controllers
         }
         [AllowAnonymous]
         [HttpPost("send")]
-        public IActionResult SendMail()
+        public IActionResult SendMail(MailRequest mail)
         {
-            mailService.SendEmail();
+            mailService.SendEmail(mail);
             return Ok(); 
         }
     }
