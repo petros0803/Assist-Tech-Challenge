@@ -12,7 +12,7 @@ const api = {
 // const api = {
 //   base: "local",
 //   authentificate: base + "/Users/authenticate",
-//   rooms: base + "/rooms"
+//   rooms: base + "/rooms",
 //   sendEmail: base + "/Email/send"
 // };
 
