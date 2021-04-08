@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.util.Patterns;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -46,7 +45,7 @@ public class LoginActivity extends AppCompatActivity {
 
         new_account.setOnClickListener(v -> {
             startActivity(new Intent(getApplicationContext(), RegisterActivity.class));
-                    finish();
+            finish();
         });
     }
 
@@ -102,6 +101,8 @@ public class LoginActivity extends AppCompatActivity {
                             Singleton.getInstance().setPhoneNumber(response.body().getPhoneNumber());
                             Singleton.getInstance().setEmail(response.body().getEmail());
                             Singleton.getInstance().setToken(response.body().getToken());
+                            Singleton.getInstance().setUserID(response.body().getId());
+                            Log.d("UserID", response.body().getId() + " ");
                             startActivity(new Intent(getApplicationContext(), MainMenu.class));
                             finish();
                         }

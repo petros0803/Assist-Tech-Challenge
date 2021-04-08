@@ -1,6 +1,6 @@
 package com.example.myhotel.recyview;
 
-import android.media.Image;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,15 +10,24 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.myhotel.R;
 import com.example.myhotel.api.models.Rooms;
+import com.example.myhotel.ui.ReserveActivity;
 
 import java.util.ArrayList;
 
-import static android.os.Build.VERSION_CODES.R;
-
 public class RoomAdapter extends RecyclerView.Adapter<RoomAdapter.RoomViewHolder> {
     private ArrayList<Rooms> mrooms;
+    private OnItemClicklListener mlistener;
+
+    public interface OnItemClicklListener{
+        void onItemClick(int position);
+    }
+
+    public void setOnItemClickListener(OnItemClicklListener listener)
+    {
+        mlistener=listener;
+    }
+
 
     public static class RoomViewHolder extends RecyclerView.ViewHolder {
 
@@ -31,7 +40,7 @@ public class RoomAdapter extends RecyclerView.Adapter<RoomAdapter.RoomViewHolder
         private ImageView nsr;
 
 
-        public RoomViewHolder(@NonNull View itemView) {
+        public RoomViewHolder(@NonNull View itemView,OnItemClicklListener listener) {
             super(itemView);
             rnum = itemView.findViewById(com.example.myhotel.R.id.txt_room_number);
             bnum = itemView.findViewById(com.example.myhotel.R.id.txt_type_room);
@@ -40,6 +49,17 @@ public class RoomAdapter extends RecyclerView.Adapter<RoomAdapter.RoomViewHolder
             tv = itemView.findViewById(com.example.myhotel.R.id.tv_true);
             nsr = itemView.findViewById(com.example.myhotel.R.id.smk_true);
             price = itemView.findViewById(com.example.myhotel.R.id.txt_price);
+
+            itemView.setOnClickListener(v -> {
+                 if(listener!=null){
+                     int position=getAdapterPosition();
+                     if (position!=RecyclerView.NO_POSITION)
+                     {
+                         listener.onItemClick(position);
+
+                     }
+                 }
+            });
         }
     }
 
@@ -51,7 +71,7 @@ public class RoomAdapter extends RecyclerView.Adapter<RoomAdapter.RoomViewHolder
     @Override
     public RoomViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(com.example.myhotel.R.layout.room_type_card, parent, false);
-        RoomViewHolder rvh = new RoomViewHolder(v);
+        RoomViewHolder rvh = new RoomViewHolder(v,mlistener);
         return rvh;
     }
 
@@ -80,7 +100,7 @@ public class RoomAdapter extends RecyclerView.Adapter<RoomAdapter.RoomViewHolder
         }
         holder.price.setText(currentRoom.getPrice() + " $/per day");
 
-        if (!currentRoom.getF().isAc()) {
+        if (currentRoom.getF().isAc()) {
             holder.ac.setImageResource(com.example.myhotel.R.drawable.ic_akar_icons_check);
         } else holder.ac.setImageResource(com.example.myhotel.R.drawable.ic_akar_icons_circle_x);
         if (currentRoom.getF().isWifi()) {

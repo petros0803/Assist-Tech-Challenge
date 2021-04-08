@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.myhotel" >
+    package="com.example.myhotel">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -8,6 +8,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.hardware.nfc"/>
 
     <application
         android:allowBackup="true"
@@ -16,8 +17,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyHotel"
-        android:usesCleartextTraffic="true" >
-
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ui.UnlockActivity"></activity>
+        <activity android:name=".ui.ReserveActivity" />
         <activity
             android:name=".ui.MainMenu"
             android:hardwareAccelerated="true"
@@ -37,9 +39,10 @@
             android:name=".ui.SplashScreen"
             android:hardwareAccelerated="true"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustNothing" >
+            android:windowSoftInputMode="adjustNothing">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

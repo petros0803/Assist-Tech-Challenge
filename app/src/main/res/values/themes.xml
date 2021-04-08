@@ -1,10 +1,12 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.MyHotel" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.MyHotel" parent="Theme.AppCompat.DayNight.NoActionBar">
         <item name="colorPrimary">@color/turcoaz</item>
         <item name="colorPrimaryDark">@color/Black</item>
         <item name="android:statusBarColor" tools:targetApi="l">@color/Black</item>
-
+        <item name="materialCalendarStyle">@style/Widget.MaterialComponents.MaterialCalendar</item>
+        <item name="materialCalendarFullscreenTheme">@style/ThemeOverlay.MaterialComponents.MaterialCalendar.Fullscreen</item>
+        <item name="materialCalendarTheme">@style/ThemeOverlay.MaterialComponents.MaterialCalendar</item>
         <!-- Customize your theme here. -->
     </style>
     <style name="Theme.MyHotel.NoActionBar">
@@ -17,4 +19,5 @@
         <item name="android:textColor">@color/creamWhite</item>
         <item name="android:fontFamily">@font/josefin_sans_semibold</item>
     </style>
+
 </resources>

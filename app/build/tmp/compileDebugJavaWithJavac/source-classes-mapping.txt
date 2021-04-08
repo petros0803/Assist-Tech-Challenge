@@ -1,38 +1,58 @@
+com/example/myhotel/recyview/MyReservationsAdapter.java
+ com.example.myhotel.recyview.MyReservationsAdapter
+ com.example.myhotel.recyview.MyReservationsAdapter$1
+ com.example.myhotel.recyview.MyReservationsAdapter$MyReservationsViewHolder
+ com.example.myhotel.recyview.MyReservationsAdapter$MyReservationsViewHolder$1
+ com.example.myhotel.recyview.MyReservationsAdapter$OnItemClickListener
 com/example/myhotel/BuildConfig.java
  com.example.myhotel.BuildConfig
 com/example/myhotel/api/RestApiInterface.java
  com.example.myhotel.api.RestApiInterface
-com/example/myhotel/ui/RegisterActivity.java
- com.example.myhotel.ui.RegisterActivity
- com.example.myhotel.ui.RegisterActivity$1
- com.example.myhotel.ui.RegisterActivity$2
+com/example/myhotel/fragment/AvailableReservations.java
+ com.example.myhotel.fragment.AvailableReservations
+ com.example.myhotel.fragment.AvailableReservations$1
+com/example/myhotel/api/models/Reservations.java
+ com.example.myhotel.api.models.Reservations
+com/example/myhotel/api/models/RemoveReservation.java
+ com.example.myhotel.api.models.RemoveReservation
 com/example/myhotel/api/models/Login.java
  com.example.myhotel.api.models.Login
-com/example/myhotel/fragment/MyReservations.java
- com.example.myhotel.fragment.MyReservations
-com/example/myhotel/api/models/Rooms.java
- com.example.myhotel.api.models.Rooms
+com/example/myhotel/api/models/MakeReservation.java
+ com.example.myhotel.api.models.MakeReservation
+com/example/myhotel/ui/MainMenu.java
+ com.example.myhotel.ui.MainMenu
 com/example/myhotel/api/models/Facilities.java
  com.example.myhotel.api.models.Facilities
-com/example/myhotel/ui/SplashScreen.java
- com.example.myhotel.ui.SplashScreen
- com.example.myhotel.ui.SplashScreen$1
-com/example/myhotel/api/models/Register.java
- com.example.myhotel.api.models.Register
 com/example/myhotel/recyview/RoomAdapter.java
  com.example.myhotel.recyview.RoomAdapter
+ com.example.myhotel.recyview.RoomAdapter$OnItemClicklListener
  com.example.myhotel.recyview.RoomAdapter$RoomViewHolder
+com/example/myhotel/fragment/BookedFragment.java
+ com.example.myhotel.fragment.BookedFragment
+ com.example.myhotel.fragment.BookedFragment$1
+ com.example.myhotel.fragment.BookedFragment$2
+com/example/myhotel/api/models/Register.java
+ com.example.myhotel.api.models.Register
+com/example/myhotel/api/models/Rooms.java
+ com.example.myhotel.api.models.Rooms
 com/example/myhotel/data/User.java
  com.example.myhotel.data.User
+com/example/myhotel/ui/UnlockActivity.java
+ com.example.myhotel.ui.UnlockActivity
 com/example/myhotel/api/ApiClient.java
  com.example.myhotel.api.ApiClient
 com/example/myhotel/data/Singleton.java
  com.example.myhotel.data.Singleton
-com/example/myhotel/fragment/AvailableReservations.java
- com.example.myhotel.fragment.AvailableReservations
- com.example.myhotel.fragment.AvailableReservations$1
-com/example/myhotel/ui/MainMenu.java
- com.example.myhotel.ui.MainMenu
 com/example/myhotel/ui/LoginActivity.java
  com.example.myhotel.ui.LoginActivity
  com.example.myhotel.ui.LoginActivity$1
+com/example/myhotel/ui/ReserveActivity.java
+ com.example.myhotel.ui.ReserveActivity
+ com.example.myhotel.ui.ReserveActivity$1
+ com.example.myhotel.ui.ReserveActivity$2
+com/example/myhotel/ui/SplashScreen.java
+ com.example.myhotel.ui.SplashScreen
+ com.example.myhotel.ui.SplashScreen$1
+com/example/myhotel/ui/RegisterActivity.java
+ com.example.myhotel.ui.RegisterActivity
+ com.example.myhotel.ui.RegisterActivity$1

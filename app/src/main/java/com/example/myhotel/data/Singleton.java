@@ -1,6 +1,11 @@
 package com.example.myhotel.data;
 
+import com.example.myhotel.api.models.Facilities;
+import com.example.myhotel.api.models.Rooms;
 import com.google.gson.annotations.SerializedName;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Singleton {
 
@@ -60,10 +65,32 @@ public class Singleton {
         this.token = token;
     }
 
+    public String getUserID() {
+        return userID;
+    }
+
+
+    public void setUserID(String userID) {
+        this.userID = userID;
+    }
+
+    public ArrayList<Rooms> getRooms() {
+        return rooms;
+    }
+
+    public void setRooms(ArrayList<Rooms> rooms) {
+        this.rooms = rooms;
+    }
+
+
     private String email;
     private String password;
     private String name;
     private String phoneNumber;
     private String role;
     private String token;
+    private String userID;
+    private ArrayList<Rooms> rooms;
+
+
 }

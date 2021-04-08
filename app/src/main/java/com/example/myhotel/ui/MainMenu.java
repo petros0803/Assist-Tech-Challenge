@@ -12,7 +12,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -20,7 +19,7 @@ import android.widget.Toast;
 import com.example.myhotel.fragment.AvailableReservations;
 import com.example.myhotel.R;
 import com.example.myhotel.data.Singleton;
-import com.example.myhotel.fragment.MyReservations;
+import com.example.myhotel.fragment.BookedFragment;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainMenu extends AppCompatActivity {
@@ -104,7 +103,7 @@ public class MainMenu extends AppCompatActivity {
                 txt_on.setVisibility(View.GONE);
                 txt_off.setVisibility(View.VISIBLE);
                 txt.setText("These are your reservations:");
-                selectedFragment = new MyReservations();
+                selectedFragment = new BookedFragment();
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
             }
         });

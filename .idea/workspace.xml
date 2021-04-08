@@ -8,8 +8,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="response" />
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
@@ -42,8 +41,8 @@
       <list>
         <option value="Interface" />
         <option value="valueResourceFile" />
-        <option value="layoutResourceFile" />
         <option value="layoutResourceFile_vertical" />
+        <option value="layoutResourceFile" />
         <option value="resourceFile" />
         <option value="Class" />
       </list>
@@ -70,8 +69,8 @@
     <property name="multi-representation-previewC:/Users/serba/AppData/Local/Android/Sdk/sources/android-30/android/view/View.java_selected" value="Custom views" />
   </component>
   <component name="RecentsManager">
-    <key name="android.template.-1923240758">
-      <recent name="com.example.myhotel" />
+    <key name="android.template.-1245777055">
+      <recent name="com.example.myhotel.ui" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Projects\mobile.apps\myHotel\app\src\main\res\drawable" />
@@ -80,15 +79,24 @@
       <recent name="com.example.myhotel.ui" />
       <recent name="com.example.myhotel" />
     </key>
+    <key name="android.template.797125134">
+      <recent name="com.example.myhotel" />
+      <recent name="com.example.myhotel.ui" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Projects\mobile.apps\myHotel\app\src\main\res\drawable-v24" />
+    </key>
+    <key name="android.template.751689988">
+      <recent name="com.example.myhotel.fragment" />
     </key>
     <key name="android.template.207893710">
       <recent name="com.example.myhotel.ui" />
     </key>
-    <key name="android.template.797125134">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.myhotel.api.models" />
+    </key>
+    <key name="android.template.-1923240758">
       <recent name="com.example.myhotel" />
-      <recent name="com.example.myhotel.ui" />
     </key>
   </component>
   <component name="RunManager">
@@ -179,10 +187,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="414" y="195" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617395513149" />
-    <state x="1000" y="200" key="#com.intellij.ide.util.MemberChooser" timestamp="1617657854104">
+    <state x="1000" y="200" width="390" height="629" key="#com.intellij.ide.util.MemberChooser" timestamp="1617894568641">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="1000" y="200" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617657854104" />
+    <state x="1000" y="200" width="390" height="629" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617894568641" />
     <state x="595" y="464" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1617638994451">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -191,6 +199,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="743" y="409" width="512" height="270" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617402525515" />
+    <state x="525" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1617887945223">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="525" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617887945223" />
     <state x="690" y="287" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1617402543746">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -203,41 +215,41 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="540" y="295" key="AndroidCreateResourceDirectoryDialog/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617466445879" />
-    <state x="540" y="295" key="AndroidCreateResourceFileDialog" timestamp="1617628158255">
+    <state x="540" y="295" key="AndroidCreateResourceFileDialog" timestamp="1617792523541">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="540" y="295" key="AndroidCreateResourceFileDialog/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617628158255" />
-    <state x="804" y="330" key="AndroidCreateXmlResourceDialog" timestamp="1617619225511">
+    <state x="540" y="295" key="AndroidCreateResourceFileDialog/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617792523541" />
+    <state x="804" y="330" key="AndroidCreateXmlResourceDialog" timestamp="1617792499744">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="804" y="330" key="AndroidCreateXmlResourceDialog/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617619225511" />
+    <state x="804" y="330" key="AndroidCreateXmlResourceDialog/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617792499744" />
     <state x="640" y="295" key="Downloadable.Font.Dialog.Size" timestamp="1617622080254">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="640" y="295" key="Downloadable.Font.Dialog.Size/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617622080254" />
-    <state x="645" y="286" key="FileChooserDialogImpl" timestamp="1617653529131">
+    <state x="645" y="286" key="FileChooserDialogImpl" timestamp="1617882505567">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="645" y="286" key="FileChooserDialogImpl/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617653529131" />
-    <state width="1876" height="360" key="GridCell.Tab.0.bottom" timestamp="1617657586716">
+    <state x="645" y="286" key="FileChooserDialogImpl/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617882505567" />
+    <state width="1876" height="301" key="GridCell.Tab.0.bottom" timestamp="1617895536433">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="360" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617657586716" />
+    <state width="1876" height="301" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617895536433" />
     <state width="1876" height="295" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617189561624" />
-    <state width="1876" height="360" key="GridCell.Tab.0.center" timestamp="1617657586716">
+    <state width="1876" height="301" key="GridCell.Tab.0.center" timestamp="1617895536432">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="360" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617657586716" />
+    <state width="1876" height="301" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617895536432" />
     <state width="1876" height="295" key="GridCell.Tab.0.center/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617189561624" />
-    <state width="1876" height="360" key="GridCell.Tab.0.left" timestamp="1617657586716">
+    <state width="1876" height="301" key="GridCell.Tab.0.left" timestamp="1617895536432">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="360" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617657586716" />
+    <state width="1876" height="301" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617895536432" />
     <state width="1876" height="295" key="GridCell.Tab.0.left/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617189561624" />
-    <state width="1876" height="360" key="GridCell.Tab.0.right" timestamp="1617657586716">
+    <state width="1876" height="301" key="GridCell.Tab.0.right" timestamp="1617895536433">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state width="1876" height="360" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617657586716" />
+    <state width="1876" height="301" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617895536433" />
     <state width="1876" height="295" key="GridCell.Tab.0.right/0.0.1920.1080/1920.0.1920.1080@1920.0.1920.1080" timestamp="1617189561624" />
     <state x="461" y="185" key="SettingsEditor" timestamp="1616998292614">
       <screen x="0" y="0" width="1920" height="1080" />
@@ -251,9 +263,17 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="667" y="139" width="585" height="801" key="find.popup/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617541090365" />
-    <state x="616" y="250" key="run.anything.popup" timestamp="1617126060020">
+    <state x="755" y="287" key="refactoring.ChangeSignatureDialog" timestamp="1617895928034">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="616" y="250" key="run.anything.popup/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617126060020" />
+    <state x="755" y="287" key="refactoring.ChangeSignatureDialog/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617895928034" />
+    <state x="616" y="250" key="run.anything.popup" timestamp="1617885823638">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="616" y="250" key="run.anything.popup/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617885823638" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1617892331689">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080/1920.0.1920.1080@0.0.1920.1080" timestamp="1617892331689" />
   </component>
 </project>
