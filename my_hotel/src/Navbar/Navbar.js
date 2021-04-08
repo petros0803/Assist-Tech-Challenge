@@ -9,7 +9,6 @@ import {
     NavBtnLink
 } from './NavbarElements'
 import logo from '../Images/logo.svg'
-import { Redirect } from 'react-router';
 import { useDispatch } from 'react-redux'
 
 const Navbar = (props) => {
@@ -34,10 +33,10 @@ const Navbar = (props) => {
                     <NavLink to='/admin/reservations'>
                         Reservations
                     </NavLink>
-                    {/* <NavLink to='/contact-us' activeStyle>
-                        Contact Us
+                    <NavLink to='/admin/sendemail'>
+                        Send promotion
                     </NavLink>
-                    <NavLink to='/sign-up' activeStyle>
+                    {/* <NavLink to='/sign-up' activeStyle>
                         Sign Up
                     </NavLink> */}
                 </NavMenu>

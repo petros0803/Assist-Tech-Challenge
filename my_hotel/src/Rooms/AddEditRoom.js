@@ -71,6 +71,7 @@ const AddEditRoom = (props) => {
 
     const checkDataBeforeSend = () => {
         let error = []
+        
         if (inputRoomNumber < 0 || inputRoomNumber > 999 || inputRoomNumber === undefined || inputRoomNumber.length === 0) {
             error.push("Room number should be between 0 and 999!")
         }
@@ -103,16 +104,15 @@ const AddEditRoom = (props) => {
 
     const editRoom = () => {
         if (checkDataBeforeSend()) {
-            console.log(selectedOptions)
             const currentFacilities = [];
-            Object.keys(selectedOptions.map((item, i) => currentFacilities.push(item.name)))
+            Object.keys(selectedOptions.map((item, i) => currentFacilities.push(item.name.toUpperCase())))
             fetch(api.rooms + `/${id}`, {
                 method: 'PUT',
                 body: JSON.stringify({
                     "number": inputRoomNumber,
                     "beds": inputNumberOfBeds,
                     "facilities":{
-                        "wifi": currentFacilities.indexOf("WIFI") > -1,
+                        "wifi": currentFacilities.indexOf("WIFI") > -1 ,
                         "ac": currentFacilities.indexOf("AC") > -1,
                         "tv": currentFacilities.indexOf("TV") > -1,
                         "nsr": currentFacilities.indexOf("NSR") > -1
@@ -122,9 +122,12 @@ const AddEditRoom = (props) => {
                 }),
                 headers: { 'Content-Type': 'application/json '}
             })
-            .then(resp => resp.json())
-            .then(data => console.log(data))
+            .then(resp => {
+                dispatch({type: 'UPDATE_TABLE_TRUE'})
+                return resp.json()
+            })
         }
+        dispatch({type: 'UPDATE_TABLE_FALSE'})
         history.push("/admin/rooms")
     }
 
@@ -134,16 +137,16 @@ const AddEditRoom = (props) => {
                 <h1 className="form_addEditTitle"> {props.addRoom === true ? "Add room" : "Edit room"} </h1>
                 <div className="form__addEditInputs">
                     <p className="form__p"> Room number </p>
-                    {id === undefined ? <input type="number" className="from__inputs" name="roomNumber" onChange={event => setInputRoomNumber(event.target.value)} /> :
-                        <input type="number" className="from__inputs" name="roomNumber" onChange={event => setInputRoomNumber(event.target.value)} value={inputRoomNumber} />}
+                    {id === undefined ? <input type="number" className="form_inputs" name="roomNumber" onChange={event => setInputRoomNumber(event.target.value)} /> :
+                        <input type="number" className="form_inputs" name="roomNumber" onChange={event => setInputRoomNumber(event.target.value)} value={inputRoomNumber} />}
 
                     <p className="form__p"> Number of beds </p>
-                    {id === undefined ? <input type="number" className="from__inputs" name="numberOfBeds" onChange={event => setInputNumberOfBeds(event.target.value)} /> :
-                        <input type="number" className="from__inputs" name="numberOfBeds" onChange={event => setInputNumberOfBeds(event.target.value)} value={inputNumberOfBeds} />}
+                    {id === undefined ? <input type="number" className="form_inputs" name="numberOfBeds" onChange={event => setInputNumberOfBeds(event.target.value)} /> :
+                        <input type="number" className="form_inputs" name="numberOfBeds" onChange={event => setInputNumberOfBeds(event.target.value)} value={inputNumberOfBeds} />}
 
                     <p className="form__p"> Price </p>
-                    {id === undefined ? <input type="number" className="from__inputs" name="price" onChange={event => setInputPrice(event.target.value)} /> :
-                        <input type="number" className="from__inputs" name="price" onChange={event => setInputPrice(event.target.value)} value={inputPrice} />}
+                    {id === undefined ? <input type="number" className="form_inputs" name="price" onChange={event => setInputPrice(event.target.value)} /> :
+                        <input type="number" className="form_inputs" name="price" onChange={event => setInputPrice(event.target.value)} value={inputPrice} />}
                     {id === undefined ? <Multiselect
                         options={options}
                         displayValue={"name"}

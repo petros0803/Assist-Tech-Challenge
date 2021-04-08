@@ -18,7 +18,7 @@ const RoomRow = (props) => {
 
     useEffect(() => {
         displayFacilities();
-    }, [reRender])
+    }, [props.store.updateTable.updateTable])
 
     const deleteRoom = (index) => {
         dispatch(props.store.onRequestDeleteRoom(index))

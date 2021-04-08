@@ -4,7 +4,8 @@ import {
   requestRoomsReducer,
   requestAddRoomReducer,
   requestDeleteRoomReducer,
-  requestGetRoomReducer
+  requestGetRoomReducer,
+  updateTableReducer,
 } from './Reducers';
 
 const allReducers = combineReducers({
@@ -12,7 +13,8 @@ const allReducers = combineReducers({
   requestRooms: requestRoomsReducer,
   requestAddRoom: requestAddRoomReducer,
   requestDeleteRoom: requestDeleteRoomReducer,
-  requestGetRoom: requestGetRoomReducer
+  requestGetRoom: requestGetRoomReducer,
+  updateTable: updateTableReducer,
 })
 
 export default allReducers;

@@ -1,4 +1,4 @@
-.form__addEditContainer{
+.form__sendEmailContainer{
     width: 500px;
     height: 700px;
     border-radius: 15px;
@@ -11,14 +11,7 @@
     transform: translate(-50%, -50%);
 }
 
-.form_addEditTitle{
-    color: #F7FFF7;
-    font-size: 64px;
-    text-align: center;
-    padding-top: 10px;
-}
-
-.form_inputs{
+.form_SendEmailInputs{
     width: 365px;
     height: 50px;
     border-radius: 10px;
@@ -26,22 +19,26 @@
     margin-top: 0px !important;
     padding-left: 10px;
     outline:0px;
-    font-size: 24px;
+    font-size: 18px;
 }
 
-.form__addEditInputs{
-    position: absolute;
-    left: 50%;
-    top: 40%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+.form_sendEmailTitle{
+    color: #F7FFF7;
+    font-size: 48px;
+    text-align: center;
+    padding-top: 20px;
 }
 
-.form__addEditRoomButton{
+textarea{
+    resize: none;
+    height: 200px !important;
+}
+
+.form__sendEmailRoomButton{
     width: 265px;
     height: 65px;
     position: absolute;
-    top: 160%;
+    top: 115%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -50,32 +47,26 @@
     font-size: 32px;
 }
 
-.form__addEditRoomButton:hover{
-    border: 3px black solid;
+.form__sendEmailInputs{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
-#multiselectContainerReact{
-    color: black;
-    padding-top: 20px;
-    width: 365px;
-    height: 50px;
-    border-radius: 15px;
-}
 
 .form__p{
     margin-bottom: 0px !important;
     margin-top: 15px !important;
 }
 
-.from__pDisplayErrors{
+.from__pSendEmailErrors{
     color: red;
     margin-top: 0px !important;
     margin-bottom: 0px !important;
 }
 
-.form_displayErrorsDiv{
-    margin-top: 75px;
-    position: absolute;
+.form_SendEmailErrorsDiv{
     text-align: center;
-    left: 6%;
 }

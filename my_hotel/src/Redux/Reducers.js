@@ -15,6 +15,8 @@ import {
     REQUEST_GETROOM_PENDING,
     REQUEST_GETROOM_SUCCESS,
     REQUEST_GETROOM_FAILED,
+    UPDATE_TABLE_TRUE,
+    UPDATE_TABLE_FALSE,
 } from './Constants'
 
 const initialStateLogin = {
@@ -104,13 +106,28 @@ const initialGetRoomState = {
 
 export const requestGetRoomReducer = (state = initialGetRoomState, action = {}) => {
     switch (action.type) {
-    case REQUEST_GETROOM_PENDING:
-        return Object.assign({}, state, {isPendingGetRoom: true})
-    case REQUEST_GETROOM_SUCCESS:
-        return Object.assign({}, state, {room: action.payload, isPendingGetRoom: false})
-    case REQUEST_GETROOM_FAILED:
-        return Object.assign({}, state, {error: action.payload, isPendingGetRoom: false})
-    default:
-        return state
+        case REQUEST_GETROOM_PENDING:
+            return Object.assign({}, state, { isPendingGetRoom: true })
+        case REQUEST_GETROOM_SUCCESS:
+            return Object.assign({}, state, { room: action.payload, isPendingGetRoom: false })
+        case REQUEST_GETROOM_FAILED:
+            return Object.assign({}, state, { error: action.payload, isPendingGetRoom: false })
+        default:
+            return state
+    }
+}
+
+const initialUpdateTableState = {
+    updateTable: false
+}
+
+export const updateTableReducer = (state = initialUpdateTableState, action = {}) => {
+    switch (action.type) {
+        case UPDATE_TABLE_TRUE:
+            return Object.assign({}, state, { updateTable: true })
+        case UPDATE_TABLE_FALSE:
+            return Object.assign({}, state, { updateTable: false })
+        default:
+            return state
     }
 }

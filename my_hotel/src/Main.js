@@ -6,6 +6,7 @@ import Rooms from './Rooms/Rooms'
 import Navbar from './Navbar/Navbar'
 import AddEditRoom from './Rooms/AddEditRoom'
 import ReservedRoom from './Rooms/ReservedRoom';
+import SendEmail from './SendEmail/SendEmail'
 
 const Main = (props) => {
     return (
@@ -18,6 +19,7 @@ const Main = (props) => {
                 <Route path='/admin/rooms/add' exact render={() => localStorage.getItem('User_Login_Token') ? <AddEditRoom store={props.store} addRoom={true} /> : <Redirect to='/login' />} />
                 <Route path='/admin/rooms/edit/:id' render={() => localStorage.getItem('User_Login_Token') ? <AddEditRoom store={props.store} addRoom={false} /> : <Redirect to='/login' />} />
                 <Route path='/admin/reservations' render={() => localStorage.getItem('User_Login_Token') ? <ReservedRoom store={props.store} /> : <Redirect to='/login' />} />
+                <Route path='/admin/sendemail' render={() => localStorage.getItem('User_Login_Token') ? <SendEmail store={props.store} /> : <Redirect to='/login' />} />
             </div>
         </Router>
     )

@@ -15,6 +15,8 @@ import {
     REQUEST_GETROOM_PENDING,
     REQUEST_GETROOM_SUCCESS,
     REQUEST_GETROOM_FAILED,
+    UPDATE_TABLE_TRUE,
+    UPDATE_TABLE_FALSE
 } from './Constants';
 import api from '../Api-connections/Api-connections';
 
@@ -50,7 +52,11 @@ const handleServerError = (response) => {
 export const requestRooms = data => dispatch => {
     dispatch({ type: REQUEST_ROOMS_PENDING });
     fetch(api.rooms, {
-        method: "GET"
+        method: "GET",
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ' + localStorage.getItem('User_Login_Token')
+        }
     })
         .then(handleServerError)
         .then(data => {
@@ -78,12 +84,17 @@ export const requestAddRoom = (data, options) => dispatch => {
             "reserved": false,
             "price": data.price
         }),
-        headers: { 'Content-Type': 'application/json' }
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer ' + localStorage.getItem('User_Login_Token')
+        }
     })
         .then(data => {
             dispatch({ type: REQUEST_ADDROOM_SUCCESS, payload: data })
+            dispatch({ type: UPDATE_TABLE_TRUE })
         })
         .catch(error => dispatch({ type: REQUEST_ADDROOM_FAILED, payload: error }))
+    dispatch({ type: UPDATE_TABLE_FALSE })
 }
 
 export const requestDeleteRoom = (index) => dispatch => {
@@ -93,8 +104,10 @@ export const requestDeleteRoom = (index) => dispatch => {
     })
         .then(resp => {
             dispatch({ type: REQUEST_DELETEROOM_SUCCESS, payload: resp })
+            dispatch({ type: UPDATE_TABLE_TRUE })
         })
         .catch(error => dispatch({ type: REQUEST_DELETEROOM_FAILED, payload: error }))
+    dispatch({ type: UPDATE_TABLE_FALSE })
 }
 
 export const requestGetRoom = index => dispatch => {
@@ -104,8 +117,8 @@ export const requestGetRoom = index => dispatch => {
     })
         .then(resp => resp.json())
         .then(data => {
-            dispatch({type: REQUEST_GETROOM_SUCCESS, payload: data})
+            dispatch({ type: REQUEST_GETROOM_SUCCESS, payload: data })
         })
-        .then(error => dispatch({type: REQUEST_GETROOM_FAILED, payload: error}))
+        .then(error => dispatch({ type: REQUEST_GETROOM_FAILED, payload: error }))
 }
 

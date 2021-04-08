@@ -5,7 +5,7 @@ import {
   requestRooms,
   requestAddRoom,
   requestDeleteRoom,
-  requestGetRoom
+  requestGetRoom,
 } from './Redux/Actions'
 import { connect } from 'react-redux'
 import Main from './Main'
@@ -17,6 +17,7 @@ const mapStateToProps = state => {
     requestAddRoom: state.requestAddRoom,
     requestDeleteRoom: state.requestDeleteRoom,
     requestGetRoom: state.requestGetRoom,
+    updateTable: state.updateTable
   }
 }
 

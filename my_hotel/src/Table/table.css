@@ -50,3 +50,18 @@ th{
 .table__header__td_button{
     text-align: right;    
 }
+
+.table__notFoundImage{
+    width: 100px;
+    height: 100px;
+}
+
+.table__notFoundDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table__notFoundText{
+    font-size: 32px;
+}
