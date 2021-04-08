@@ -28,13 +28,13 @@ namespace HotelAutomation.Application.Services
             this.userRepository = userRepository;
             //this.configuration = configuration;
         }
-        public void SendEmail(MailRequest mail)
+        public void SendEmail()
         {
-            MailAddress to = new MailAddress(mail.ToEmail);
+            MailAddress to = new MailAddress("andreihincu1999@gmail.com");
             MailAddress from = new MailAddress("hotelautomation2021@gmail.com");
             MailMessage message = new MailMessage(from, to);
-            message.Subject = mail.Subject;
-            message.Body = mail.Body;
+            message.Subject = "Salut";
+            message.Body = "Ce mai faci?";
             SmtpClient client = new SmtpClient("smtp.gmail.com", 587)
             {
               
