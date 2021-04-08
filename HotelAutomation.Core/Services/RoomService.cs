@@ -118,6 +118,13 @@ namespace HotelAutomation.Application.Services
 
         public void Delete(string id)
         {
+            var reservations = reservationRepository.GetAllReservations();
+            if (id != null)
+                reservations = reservations.Where(x => x.RoomId == id).ToList();
+            foreach (Reservation res in reservations)
+            {
+                reservationRepository.Delete(res.Id);
+            }
             roomRepository.Delete(id);
 
         }

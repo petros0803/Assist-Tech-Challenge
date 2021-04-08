@@ -30,6 +30,7 @@ namespace HotelAutomation.Application.Services
         }
         public void SendEmail(MailRequest mail)
         {
+           // var users = userRepository.GetByEmail();
             MailAddress to = new MailAddress("andreihincu1999@gmail.com");
             MailAddress from = new MailAddress("hotelautomation2021@gmail.com");
             MailMessage message = new MailMessage(from, to);
