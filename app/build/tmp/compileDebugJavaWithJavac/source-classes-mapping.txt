@@ -3,14 +3,15 @@ com/example/myhotel/recyview/MyReservationsAdapter.java
  com.example.myhotel.recyview.MyReservationsAdapter$1
  com.example.myhotel.recyview.MyReservationsAdapter$MyReservationsViewHolder
  com.example.myhotel.recyview.MyReservationsAdapter$MyReservationsViewHolder$1
+ com.example.myhotel.recyview.MyReservationsAdapter$MyReservationsViewHolder$2
  com.example.myhotel.recyview.MyReservationsAdapter$OnItemClickListener
 com/example/myhotel/BuildConfig.java
  com.example.myhotel.BuildConfig
 com/example/myhotel/api/RestApiInterface.java
  com.example.myhotel.api.RestApiInterface
-com/example/myhotel/fragment/AvailableReservations.java
- com.example.myhotel.fragment.AvailableReservations
- com.example.myhotel.fragment.AvailableReservations$1
+com/example/myhotel/ui/RegisterActivity.java
+ com.example.myhotel.ui.RegisterActivity
+ com.example.myhotel.ui.RegisterActivity$1
 com/example/myhotel/api/models/Reservations.java
  com.example.myhotel.api.models.Reservations
 com/example/myhotel/api/models/RemoveReservation.java
@@ -46,13 +47,13 @@ com/example/myhotel/data/Singleton.java
 com/example/myhotel/ui/LoginActivity.java
  com.example.myhotel.ui.LoginActivity
  com.example.myhotel.ui.LoginActivity$1
+com/example/myhotel/ui/SplashScreen.java
+ com.example.myhotel.ui.SplashScreen
+ com.example.myhotel.ui.SplashScreen$1
+com/example/myhotel/fragment/AvailableReservations.java
+ com.example.myhotel.fragment.AvailableReservations
+ com.example.myhotel.fragment.AvailableReservations$1
 com/example/myhotel/ui/ReserveActivity.java
  com.example.myhotel.ui.ReserveActivity
  com.example.myhotel.ui.ReserveActivity$1
  com.example.myhotel.ui.ReserveActivity$2
-com/example/myhotel/ui/SplashScreen.java
- com.example.myhotel.ui.SplashScreen
- com.example.myhotel.ui.SplashScreen$1
-com/example/myhotel/ui/RegisterActivity.java
- com.example.myhotel.ui.RegisterActivity
- com.example.myhotel.ui.RegisterActivity$1

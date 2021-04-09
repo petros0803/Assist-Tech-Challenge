@@ -40,6 +40,7 @@ public class MyReservationsAdapter extends RecyclerView.Adapter<MyReservationsAd
     private OnItemClickListener listen;
     public interface OnItemClickListener{
         void onItemClick(int position);
+        void onCancelClick(int position);
     }
 
     public void setOnItemClickListener(OnItemClickListener listener)
@@ -69,6 +70,16 @@ public class MyReservationsAdapter extends RecyclerView.Adapter<MyReservationsAd
                         {
                             listener.onItemClick(position);
                         }
+                    }
+                }
+            });
+            cancel.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    int position=getAdapterPosition();
+                    if(position!=RecyclerView.NO_POSITION)
+                    {
+                        listener.onCancelClick(position);
                     }
                 }
             });
@@ -121,7 +132,9 @@ public class MyReservationsAdapter extends RecyclerView.Adapter<MyReservationsAd
             call.enqueue(new Callback<RemoveReservation>() {
                 @Override
                 public void onResponse(Call<RemoveReservation> call, Response<RemoveReservation> response) {
+
                     Log.d("remove", "reservation removed succesfully");
+                    Toast.makeText(holder.itemView.getContext(),"Reservation Canceled",Toast.LENGTH_LONG).show();
                 }
 
                 @Override

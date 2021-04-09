@@ -4,13 +4,12 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:paddingVertical="10dp">
+    android:paddingVertical="5dp">
 
 
     <androidx.cardview.widget.CardView
         android:layout_width="339dp"
         android:layout_height="124dp"
-        android:clickable="true"
         app:cardCornerRadius="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -107,8 +107,17 @@ public class BookedFragment extends Fragment {
             public void onItemClick(int position) {
                 startActivity(new Intent(getContext(), UnlockActivity.class));
             }
+            @Override
+            public void onCancelClick(int position) {
+                removeItem(position);
+            }
         });
 
+    }
+    public void removeItem(int position)
+    {   Log.d("removeItem","am ajuns aici "+ position);
+        ares.remove(position);
+        rAdapter.notifyItemRemoved(position);
     }
 
 }

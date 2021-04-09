@@ -28,91 +28,95 @@
 16    <uses-permission android:name="android.permission.NFC" />
 16-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:10:5-62
 16-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:10:22-59
-17
-18    <application
-18-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:12:5-52:19
-19        android:allowBackup="true"
-19-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:13:9-35
-20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-20-->[androidx.core:core:1.3.1] C:\Users\serba\.gradle\caches\transforms-2\files-2.1\b234a824af7fd98a5c54fc0522824a91\core-1.3.1\AndroidManifest.xml:24:18-86
-21        android:debuggable="true"
-22        android:extractNativeLibs="false"
-23        android:icon="@mipmap/ic_launcher"
-23-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:14:9-43
-24        android:label="@string/app_name"
-24-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:15:9-41
-25        android:roundIcon="@mipmap/ic_launcher_round"
-25-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:16:9-54
-26        android:supportsRtl="true"
-26-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:17:9-35
-27        android:theme="@style/Theme.MyHotel"
-27-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:18:9-45
-28        android:usesCleartextTraffic="true" >
-28-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:19:9-44
-29        <activity android:name="com.example.myhotel.ui.UnlockActivity" />
-29-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:20:9-64
-29-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:20:19-52
-30        <activity android:name="com.example.myhotel.ui.ReserveActivity" />
-30-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:21:9-56
-30-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:21:19-53
-31        <activity
-31-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:22:9-26:59
-32            android:name="com.example.myhotel.ui.MainMenu"
-32-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:23:13-40
-33            android:hardwareAccelerated="true"
-33-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:24:13-47
-34            android:screenOrientation="portrait"
-34-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:25:13-49
-35            android:windowSoftInputMode="adjustNothing" />
-35-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:26:13-56
-36        <activity
-36-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:27:9-31:59
-37            android:name="com.example.myhotel.ui.RegisterActivity"
-37-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:28:13-48
-38            android:hardwareAccelerated="true"
-38-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:29:13-47
-39            android:screenOrientation="portrait"
-39-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:30:13-49
-40            android:windowSoftInputMode="adjustNothing" />
-40-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:31:13-56
-41        <activity
-41-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:32:9-36:59
-42            android:name="com.example.myhotel.ui.LoginActivity"
-42-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:33:13-45
-43            android:hardwareAccelerated="true"
-43-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:34:13-47
-44            android:screenOrientation="portrait"
-44-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:35:13-49
-45            android:windowSoftInputMode="adjustNothing" />
-45-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:36:13-56
-46        <activity
-46-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:37:9-47:20
-47            android:name="com.example.myhotel.ui.SplashScreen"
-47-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:38:13-44
-48            android:hardwareAccelerated="true"
-48-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:39:13-47
-49            android:screenOrientation="portrait"
-49-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:40:13-49
-50            android:windowSoftInputMode="adjustNothing" >
-50-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:41:13-56
-51            <intent-filter>
-51-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:42:13-46:29
-52                <action android:name="android.intent.action.MAIN" />
-52-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:43:17-69
-52-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:43:25-66
-53
-54                <category android:name="android.intent.category.LAUNCHER" />
-54-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:45:17-77
-54-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:45:27-74
-55            </intent-filter>
-56        </activity>
-57
-58        <meta-data
-58-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:49:9-51:57
-59            android:name="preloaded_fonts"
-59-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:50:13-43
-60            android:resource="@array/preloaded_fonts" />
-60-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:51:13-54
-61    </application>
-62
-63</manifest>
+17    <uses-permission android:name="android.hardware.nfc" />
+17-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:11:5-59
+17-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:11:22-57
+18
+19    <application
+19-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:13:5-53:19
+20        android:allowBackup="true"
+20-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:14:9-35
+21        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+21-->[androidx.core:core:1.3.1] C:\Users\serba\.gradle\caches\transforms-2\files-2.1\b234a824af7fd98a5c54fc0522824a91\core-1.3.1\AndroidManifest.xml:24:18-86
+22        android:debuggable="true"
+23        android:extractNativeLibs="false"
+24        android:icon="@mipmap/ic_launcher"
+24-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:15:9-43
+25        android:label="@string/app_name"
+25-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:16:9-41
+26        android:roundIcon="@mipmap/ic_launcher_round"
+26-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:17:9-54
+27        android:supportsRtl="true"
+27-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:18:9-35
+28        android:testOnly="true"
+29        android:theme="@style/Theme.MyHotel"
+29-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:19:9-45
+30        android:usesCleartextTraffic="true" >
+30-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:20:9-44
+31        <activity android:name="com.example.myhotel.ui.UnlockActivity" />
+31-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:21:9-64
+31-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:21:19-52
+32        <activity android:name="com.example.myhotel.ui.ReserveActivity" />
+32-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:22:9-56
+32-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:22:19-53
+33        <activity
+33-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:23:9-27:59
+34            android:name="com.example.myhotel.ui.MainMenu"
+34-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:24:13-40
+35            android:hardwareAccelerated="true"
+35-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:25:13-47
+36            android:screenOrientation="portrait"
+36-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:26:13-49
+37            android:windowSoftInputMode="adjustNothing" />
+37-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:27:13-56
+38        <activity
+38-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:28:9-32:59
+39            android:name="com.example.myhotel.ui.RegisterActivity"
+39-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:29:13-48
+40            android:hardwareAccelerated="true"
+40-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:30:13-47
+41            android:screenOrientation="portrait"
+41-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:31:13-49
+42            android:windowSoftInputMode="adjustNothing" />
+42-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:32:13-56
+43        <activity
+43-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:33:9-37:59
+44            android:name="com.example.myhotel.ui.LoginActivity"
+44-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:34:13-45
+45            android:hardwareAccelerated="true"
+45-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:35:13-47
+46            android:screenOrientation="portrait"
+46-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:36:13-49
+47            android:windowSoftInputMode="adjustNothing" />
+47-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:37:13-56
+48        <activity
+48-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:38:9-48:20
+49            android:name="com.example.myhotel.ui.SplashScreen"
+49-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:39:13-44
+50            android:hardwareAccelerated="true"
+50-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:40:13-47
+51            android:screenOrientation="portrait"
+51-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:41:13-49
+52            android:windowSoftInputMode="adjustNothing" >
+52-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:42:13-56
+53            <intent-filter>
+53-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:43:13-47:29
+54                <action android:name="android.intent.action.MAIN" />
+54-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:44:17-69
+54-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:44:25-66
+55
+56                <category android:name="android.intent.category.LAUNCHER" />
+56-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:46:17-77
+56-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:46:27-74
+57            </intent-filter>
+58        </activity>
+59
+60        <meta-data
+60-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:50:9-52:57
+61            android:name="preloaded_fonts"
+61-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:51:13-43
+62            android:resource="@array/preloaded_fonts" />
+62-->C:\Projects\mobile.apps\myHotel\app\src\main\AndroidManifest.xml:52:13-54
+63    </application>
+64
+65</manifest>

@@ -68,9 +68,7 @@ public class RegisterActivity extends AppCompatActivity {
         btn_register.setOnClickListener(v -> {
 
             register();
-            Toast.makeText(RegisterActivity.this, "Proceeding to login", Toast.LENGTH_LONG).show();
-            startActivity(new Intent(getApplicationContext(), LoginActivity.class));
-            finish();
+
         });
 
 
@@ -167,7 +165,7 @@ public class RegisterActivity extends AppCompatActivity {
             reg.setPassword(inputpass.getEditableText().toString().trim());
             reg.setEmail(useremail.getEditableText().toString().trim());
             reg.setPhoneNumber(phone.getEditableText().toString().trim());
-            reg.setRole("user");
+
 
             Call<Register> call = ApiClient.getApiClient().create(RestApiInterface.class).performREGISTER(reg);
 
@@ -177,11 +175,11 @@ public class RegisterActivity extends AppCompatActivity {
                     if (response.isSuccessful()) {
                         Toast.makeText(RegisterActivity.this, "Succesfully Register", Toast.LENGTH_SHORT).show();
                         Toast.makeText(RegisterActivity.this, "Proceeding to login", Toast.LENGTH_LONG).show();
-                        startActivity(new Intent(getApplicationContext(), LoginActivity.class));
-                        finish();
+
                         if (response.body() != null) {
 
-
+                            startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+                            finish();
                          } else {
                             Toast.makeText(RegisterActivity.this, "Nothing has been returned", Toast.LENGTH_LONG).show();
                         }

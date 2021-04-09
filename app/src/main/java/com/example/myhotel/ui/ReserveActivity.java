@@ -40,11 +40,12 @@ public class ReserveActivity extends AppCompatActivity {
     private int bednumb;
     private String roomID;
     private Button sendData;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reservation);
-        back=findViewById(R.id.back_btn);
+        back = findViewById(R.id.back_btn);
         back.setOnClickListener((View.OnClickListener) v -> {
             startActivity(new Intent(getApplicationContext(), MainMenu.class));
             finish();
@@ -54,57 +55,43 @@ public class ReserveActivity extends AppCompatActivity {
         sendReservedData();
     }
 
+    private void sendReservedData() {
+        sendData = findViewById(R.id.send_reservation);
 
+        sendData.setOnClickListener(v -> {
+            MakeReservation makeReservation = new MakeReservation(Singleton.getInstance().getUserID(), roomID, sDate, eDate);
 
-
-
-
-
-
-
-
-
-
-private void sendReservedData()
-{
-    sendData=findViewById(R.id.send_reservation);
-
-    sendData.setOnClickListener(v -> {
-        MakeReservation makeReservation=new MakeReservation(Singleton.getInstance().getUserID(),roomID,sDate,eDate);
-
-        Call<MakeReservation> call= ApiClient.getApiInterface().performReservation(makeReservation);
-        call.enqueue(new Callback<MakeReservation>() {
-            @Override
-            public void onResponse(Call<MakeReservation> call, Response<MakeReservation> response) {
-                if (response.isSuccessful())
-                {
-                    Log.d("reservation", "reserved succesfully");
-                    startActivity(new Intent(getApplicationContext(), MainMenu.class));
-                    Toast.makeText(ReserveActivity.this,"Good job",Toast.LENGTH_LONG).show();
-                    finish();
+            Call<MakeReservation> call = ApiClient.getApiInterface().performReservation(makeReservation);
+            call.enqueue(new Callback<MakeReservation>() {
+                @Override
+                public void onResponse(Call<MakeReservation> call, Response<MakeReservation> response) {
+                    if (response.isSuccessful()) {
+                        Log.d("reservation", "reserved succesfully");
+                        startActivity(new Intent(getApplicationContext(), MainMenu.class));
+                        Toast.makeText(ReserveActivity.this, "Good job", Toast.LENGTH_LONG).show();
+                        finish();
+                    }
                 }
-            }
 
-            @Override
-            public void onFailure(Call<MakeReservation> call, Throwable t) {
-                Log.d("reservation", "FAILED  "+t);
-            }
+                @Override
+                public void onFailure(Call<MakeReservation> call, Throwable t) {
+                    Log.d("reservation", "FAILED  " + t);
+                }
+            });
+
         });
 
-    });
 
-}
-
-
-
+    }
 
 
     private void getDataFromFragment() {
+
         Intent intent = getIntent();
-        bednumb= (int) intent.getSerializableExtra("room_name");
-        roomID= (String) intent.getSerializableExtra("room_id");
-        if (bednumb!=0) {
-            Log.d("rooms", "rooms retrieved corectrly"+ bednumb + " " +roomID);
+        bednumb = (int) intent.getSerializableExtra("room_name");
+        roomID = (String) intent.getSerializableExtra("room_id");
+        if (bednumb != 0) {
+            Log.d("rooms", "rooms retrieved corectrly" + bednumb + " " + roomID);
 
             TextView roomtype = findViewById(R.id.room_type_book);
             switch (bednumb) {
@@ -122,16 +109,16 @@ private void sendReservedData()
                     break;
                 case 5:
                     roomtype.setText("Master Suite");
-                    break;}
+                    break;
+            }
 
         } else
             Log.d("rooms", "dosent work");
     }
 
 
-
-    private void pickingDate()
-    {   txtreservation=findViewById(R.id.reservation_period_txt);
+    private void pickingDate() {
+        txtreservation = findViewById(R.id.reservation_period_txt);
 
         MaterialDatePicker.Builder<Pair<Long, Long>> builder = MaterialDatePicker.Builder.dateRangePicker();
         CalendarConstraints.Builder constraintsBuilder = new CalendarConstraints.Builder();
@@ -153,12 +140,14 @@ private void sendReservedData()
                 SimpleDateFormat simpleFormat = new SimpleDateFormat("yyyy-MM-dd");
                 sDate = simpleFormat.format(startDate);
                 eDate = simpleFormat.format(endDate);
-                Log.d("simpleformat",startDate+ " "+endDate);
-                txtreservation.setText("From: "+sDate+" to: "+ eDate);
+                Log.d("simpleformat", startDate + " " + endDate);
+                txtreservation.setText("From: " + sDate + " to: " + eDate);
+                txtreservation.setTextColor(Integer.parseInt("F7FFF7"));
 
-                Log.d("selected dates","from "+sDate+" to "+ eDate);
+                Log.d("selected dates", "from " + sDate + " to " + eDate);
 
             }
         });
     }
+
 }

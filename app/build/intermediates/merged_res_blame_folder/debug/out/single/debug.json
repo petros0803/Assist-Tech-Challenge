@@ -68,6 +68,10 @@
         "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\drawable\\ill_register__1_.png"
     },
     {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\drawable_btn2.xml.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\drawable\\btn2.xml"
+    },
+    {
         "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\drawable_input_border.xml.flat",
         "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\drawable\\input_border.xml"
     },
@@ -98,6 +102,10 @@
     {
         "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_mail.xml.flat",
         "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\drawable\\ic_mail.xml"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_cib_cashapp.xml.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\drawable\\ic_cib_cashapp.xml"
     },
     {
         "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\menu_menu_drawer.xml.flat",
@@ -142,6 +150,10 @@
     {
         "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_fluent_payment_28_filled.xml.flat",
+        "source": "C:\\Projects\\mobile.apps\\myHotel\\app\\src\\main\\res\\drawable\\ic_fluent_payment_28_filled.xml"
     },
     {
         "merged": "C:\\Projects\\mobile.apps\\myHotel\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_akar_icons_check.xml.flat",

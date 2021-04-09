@@ -1773,6 +1773,7 @@ drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
 drawable btn
+drawable btn2
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -1798,11 +1799,13 @@ drawable ic_akar_icons_check
 drawable ic_akar_icons_circle_x
 drawable ic_arrow_left
 drawable ic_calendar
+drawable ic_cib_cashapp
 drawable ic_clarity_wifi_solid
 drawable ic_clock_black_24dp
 drawable ic_communication___smartphone__mobile__phone__city__buildings__message__text
 drawable ic_edit
 drawable ic_emojione_monotone_sad_but_relieved_face
+drawable ic_fluent_payment_28_filled
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -1977,6 +1980,8 @@ id calendar_grid
 id cancel_action
 id cancel_booking
 id cancel_button
+id card_rb
+id cash_rb
 id center
 id center_horizontal
 id center_vertical
@@ -2086,12 +2091,14 @@ id ignore
 id ignoreRequest
 id image
 id imageView
+id imageView10
 id imageView3
 id imageView4
 id imageView5
 id imageView6
 id imageView7
 id imageView8
+id imageView9
 id imageconfirm
 id imagemail
 id imagepass
@@ -2214,6 +2221,7 @@ id postLayout
 id progress_circular
 id progress_horizontal
 id radio
+id radioGroup2
 id ratio
 id rectangles
 id relativeLayout
@@ -2307,6 +2315,7 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
+id textView2
 id textView4
 id textView5
 id text_input_end_icon

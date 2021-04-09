@@ -11,8 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-123dp">
+        tools:layout_editor_absoluteX="-43dp"
+        tools:layout_editor_absoluteY="-16dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -26,6 +26,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="180dp"
                 android:text="@string/roomtype"
+                android:textSize="26sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.047"
                 app:layout_constraintStart_toStartOf="parent"
@@ -80,10 +81,10 @@
                 android:backgroundTint="@color/creamWhite"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.085"
+                app:layout_constraintHorizontal_bias="0.021"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView5"
-                app:layout_constraintVertical_bias="0.257" />
+                app:layout_constraintVertical_bias="0.115" />
 
             <TextView
                 android:id="@+id/reservation_period_txt"
@@ -93,9 +94,10 @@
                 android:text="Pick reservation period"
                 app:layout_constraintBottom_toBottomOf="@+id/select_dates"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.107"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/select_dates"
-                app:layout_constraintTop_toTopOf="@+id/select_dates" />
+                app:layout_constraintTop_toTopOf="@+id/select_dates"
+                app:layout_constraintVertical_bias="0.444" />
 
             <ImageView
                 android:id="@+id/back_btn"
@@ -112,14 +114,82 @@
 
             <Button
                 android:id="@+id/send_reservation"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
-                android:text="Button"
+                style="@style/SwitchTextAppearance"
+                android:layout_width="121dp"
+                android:layout_height="48dp"
+                android:background="@drawable/btn2"
+                android:shadowColor="@color/white"
+                android:text="Book now"
+                android:textAllCaps="false"
+                android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.498"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintHorizontal_bias="0.944"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.951" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup2"
+                android:layout_width="169dp"
+                android:layout_height="81dp"
+                android:layout_marginTop="34dp"
+                app:layout_constraintBottom_toTopOf="@+id/send_reservation"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.19"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/select_dates"
+                app:layout_constraintVertical_bias="0.306">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/SwitchTextAppearance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Select a payment method" />
+
+                <RadioButton
+                    android:id="@+id/card_rb"
+                    style="@style/SwitchTextAppearance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/white"
+                    android:text="Credit Card" />
+
+                <RadioButton
+                    android:id="@+id/cash_rb"
+                    style="@style/SwitchTextAppearance"
+                    android:layout_width="99dp"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/white"
+
+                    android:text="Cash" />
+
+            </RadioGroup>
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="35dp"
+                android:layout_height="33dp"
+                android:layout_marginEnd="3dp"
+                app:layout_constraintBottom_toBottomOf="@+id/radioGroup2"
+                app:layout_constraintEnd_toStartOf="@+id/radioGroup2"
+                app:layout_constraintTop_toTopOf="@+id/radioGroup2"
+                app:layout_constraintVertical_bias="0.375"
+                app:srcCompat="@drawable/ic_fluent_payment_28_filled"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="34dp"
+                android:layout_height="33dp"
+                app:layout_constraintBottom_toBottomOf="@+id/radioGroup2"
+                app:layout_constraintEnd_toEndOf="@+id/imageView9"
+                app:layout_constraintStart_toStartOf="@+id/imageView9"
+                app:layout_constraintTop_toBottomOf="@+id/imageView9"
+                app:srcCompat="@drawable/ic_cib_cashapp"
+                app:tint="@color/white" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
